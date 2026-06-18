@@ -35,7 +35,7 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white">
-        <div className="py-4 pr-2 pl-3 sm:px-4 md:px-5 lg:px-6 flex items-center justify-between">
+        <div className="py-3 md:py-4 pr-2 pl-3 sm:px-4 md:px-5 lg:px-6 flex items-center justify-between">
 
           <img src={logo} alt="MindEase Logo" className="h-8 sm:h-9" />
 
@@ -77,7 +77,7 @@ export default function Navbar() {
         onClick={() => setOpen(false)}
         className={`
           fixed top-16 left-0 w-full h-[calc(100vh-64px)] z-40 transition-all duration-300
-          ${open ? "opacity-100 backdrop-blur-md bg-black/5" : "opacity-0 pointer-events-none"}
+          ${open ? "opacity-100 backdrop-blur-xs bg-black/5" : "opacity-0 pointer-events-none"}
         `}
       />
 
@@ -104,7 +104,7 @@ export default function Navbar() {
           ))}
 
           <div className="mt-6 flex flex-col gap-3">
-            <button className="py-2.75 rounded-md border font-medium hover:bg-gray-100 transition">
+            <button className="py-2.75 rounded-lg border font-medium hover:bg-gray-100 transition">
               Login
             </button>
           </div>
