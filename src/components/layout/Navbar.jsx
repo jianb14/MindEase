@@ -34,8 +34,8 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-white border-b">
-        <div className="py-3 pr-2 pl-3 flex items-center justify-between">
+      <nav className="sticky top-0 z-50 bg-white">
+        <div className="py-4 pr-2 pl-3 sm:px-4 md:px-5 lg:px-6 flex items-center justify-between">
 
           <img src={logo} alt="MindEase Logo" className="h-8 sm:h-9" />
 
@@ -47,13 +47,13 @@ export default function Navbar() {
             ))}
           </div>
           
-          <div className="flex gap-1.5 items-center">
+          <div className="flex gap-1 items-center">
               <div className="hidden md:flex gap-2">
-                <button className="px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+                <button className="px-4 py-2 rounded-lg hover:bg-blue-50 text-sm transition">
                   Login
                 </button>
 
-                <button className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition">
+                <button className="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm hover:bg-blue-500 transition">
                   Get Started
                 </button>
               </div>
@@ -66,7 +66,7 @@ export default function Navbar() {
                 onClick={() => setOpen(!open)}
                 className="md:hidden p-2 rounded-full hover:bg-blue-50 transition"
               >
-                {open ? <X size={22} /> : <Menu size={22} />}
+                {open ? <X size={24} /> : <Menu size={24} />}
               </button>
           </div>
         </div>
@@ -84,13 +84,13 @@ export default function Navbar() {
       {/* Sidebar */}
       <aside
         className={`
-          fixed top-15.75 left-0 w-72 h-[calc(100vh-64px)]
-          bg-white border-r shadow-lg z-50
+          fixed top-16.50 left-0 w-72 h-[calc(100vh-64px)]
+          bg-white shadow-lg z-50
           transition-transform duration-300
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex flex-col p-2 gap-1">
+        <div className="flex flex-col py-2 px-4 gap-1">
 
           {navLinks.map((item) => (
             <NavItem
@@ -104,7 +104,7 @@ export default function Navbar() {
           ))}
 
           <div className="mt-6 flex flex-col gap-3">
-            <button className="py-3 rounded-lg border hover:bg-gray-50 transition">
+            <button className="py-2.75 rounded-md border font-medium hover:bg-gray-100 transition">
               Login
             </button>
           </div>
