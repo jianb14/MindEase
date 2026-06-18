@@ -101,7 +101,7 @@ export default function Navbar() {
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex flex-col h-full justify-between p-4">
+        <div className="flex flex-col h-full gap-10 p-4">
         
           <div className="flex flex-col gap-1">
             {navLinks.map((item) => (
