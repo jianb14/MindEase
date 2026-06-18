@@ -1,19 +1,30 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
 import NavItem from "../ui/NavItem";
 import logo from "/src/assets/mindease-logo.png";
+import { 
+  Menu,
+  X, 
+  House,
+  Info,
+  Briefcase,
+  Users,
+  BookOpen,
+  CreditCard,
+  Phone, 
+} from "lucide-react";
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
-    { to: "/", label: "Home" },
-    { to: "/about", label: "About" },
-    { to: "/services", label: "Services" },
-    { to: "/therapists", label: "Therapists" },
-    { to: "/resources", label: "Resources" },
-    { to: "/pricing", label: "Pricing" },
-    { to: "/contact", label: "Contact" },
+    { to: "/", label: "Home", icon: House },
+    { to: "/about", label: "About", icon: Info },
+    { to: "/services", label: "Services", icon: Briefcase },
+    { to: "/therapists", label: "Therapists", icon: Users },
+    { to: "/resources", label: "Resources", icon: BookOpen },
+    { to: "/pricing", label: "Pricing", icon: CreditCard },
+    { to: "/contact", label: "Contact", icon: Phone },
   ];
 
   // ✅ auto close sidebar when switching to desktop
@@ -90,24 +101,25 @@ export default function Navbar() {
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex flex-col py-2 px-4 gap-1">
-
-          {navLinks.map((item) => (
-            <NavItem
-              key={item.to}
-              to={item.to}
-              mobile
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </NavItem>
-          ))}
-
-          <div className="mt-6 flex flex-col gap-3">
-            <button className="py-2.75 rounded-lg border font-medium hover:bg-gray-100 transition">
-              Login
-            </button>
+        <div className="flex flex-col h-full justify-between p-4">
+        
+          <div className="flex flex-col gap-1">
+            {navLinks.map((item) => (
+              <NavItem
+                key={item.to}
+                to={item.to}
+                mobile
+                icon={<item.icon size={18} />}
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </NavItem>
+            ))}
           </div>
+
+          <button className="py-2.75 rounded-lg border font-medium hover:bg-gray-100 transition">
+              Login
+          </button>
 
         </div>
       </aside>

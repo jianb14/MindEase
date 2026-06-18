@@ -5,6 +5,7 @@ export default function NavItem({
   children,
   onClick,
   mobile = false,
+  icon,
 }) {
   return (
     <NavLink
@@ -32,7 +33,10 @@ export default function NavItem({
               after:duration-300`
       }
     >
-      {children}
+      <div className="flex items-center gap-2.5">
+        {mobile && icon}
+        <span>{children}</span>
+      </div>
     </NavLink>
   );
 }

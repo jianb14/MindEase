@@ -13,10 +13,10 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <h1 className="text-5xl font-serif text-text-primary font-bold text-center mb-6">Your Mental Wellness <br/><span className="text-blue-600">Journey Starts Here</span></h1>
+                <h1 className="text-5xl md:text-6xl font-serif text-text-primary font-bold text-center mb-6">Your Mental Wellness <br/><span className="text-blue-600">Journey Starts Here</span></h1>
                 <p className="text-text-secondary text-md text-center mb-10">Access professional therapy, guided mindfulness programs, and personalized <br/> mental health support designed to help you thrive every day.</p>
 
-                <div className="flex justify-center px-10 gap-1.5 flex-col sm:flex-row">
+                <div className="flex justify-center px-10 gap-2.5 flex-col sm:flex-row">
                     <Button 
                         label="Start your Journey"
                     />
