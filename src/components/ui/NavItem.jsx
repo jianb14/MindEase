@@ -12,10 +12,10 @@ export default function NavItem({
       onClick={onClick}
       className={({ isActive }) =>
         mobile
-          ? `block py-3 text-lg font-medium transition ${
+          ? `block py-3 px-4 text-md font-medium transition rounded-md ${
               isActive
-                ? "text-blue-600"
-                : "text-gray-700 hover:text-blue-600"
+                ? "text-blue-600 bg-blue-100"
+                : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
             }`
           : `relative py-0.5 text-sm font-medium transition
               ${

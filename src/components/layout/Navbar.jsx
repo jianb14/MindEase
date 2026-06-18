@@ -35,7 +35,7 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white border-b">
-        <div className="py-3 px-3 flex items-center justify-between">
+        <div className="py-3 pr-2 pl-3 flex items-center justify-between">
 
           <img src={logo} alt="MindEase Logo" className="h-8 sm:h-9" />
 
@@ -66,7 +66,7 @@ export default function Navbar() {
                 onClick={() => setOpen(!open)}
                 className="md:hidden p-2 rounded-full hover:bg-blue-50 transition"
               >
-                {open ? <X size={20} /> : <Menu size={20} />}
+                {open ? <X size={22} /> : <Menu size={22} />}
               </button>
           </div>
         </div>
@@ -84,13 +84,13 @@ export default function Navbar() {
       {/* Sidebar */}
       <aside
         className={`
-          fixed top-13.5 left-0 w-72 h-[calc(100vh-64px)]
+          fixed top-15.75 left-0 w-72 h-[calc(100vh-64px)]
           bg-white border-r shadow-lg z-50
           transition-transform duration-300
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex flex-col p-8 gap-4">
+        <div className="flex flex-col p-2 gap-1">
 
           {navLinks.map((item) => (
             <NavItem
