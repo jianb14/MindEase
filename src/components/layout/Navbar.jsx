@@ -16,6 +16,7 @@ import {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const navLinks = [
     { to: "/", label: "Home", icon: House },
@@ -42,14 +43,36 @@ export default function Navbar() {
     return () => media.removeEventListener("change", handleChange);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
     <>
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-white">
+        <nav
+        className={`
+          sticky top-0
+          z-50
+          transition-all duration-500
+          ${
+            scrolled
+              ? "bg-white/60 backdrop-blur-xl border border-white/30 shadow-xs"
+              : "bg-bg-primary backdrop-blur-lg border border-white/10"
+          }
+        `}
+      >
         <div className="py-3 md:py-4 pr-2 pl-3 sm:px-4 md:px-5 lg:px-6 flex items-center justify-between">
-
           <img src={logo} alt="MindEase Logo" className="h-8 sm:h-9" />
 
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((item) => (
               <NavItem key={item.to} to={item.to}>
@@ -57,31 +80,33 @@ export default function Navbar() {
               </NavItem>
             ))}
           </div>
-          
+
+          {/* Right Side */}
           <div className="flex gap-1 items-center">
-              <div className="hidden md:flex gap-2">
-                <button className="px-4 py-2 rounded-lg hover:bg-blue-50 text-sm transition">
-                  Login
-                </button>
+            <div className="hidden md:flex gap-2">
+              <button className="px-4 py-2 rounded-lg hover:bg-blue-50 text-sm transition cursor-pointer">
+                Login
+              </button>
 
-                <button className="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm hover:bg-blue-500 transition">
-                  Get Started
-                </button>
-              </div>
-
-              <button className="md:hidden px-3 py-2 text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition">
+              <button className="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm hover:bg-blue-500 transition cursor-pointer">
                 Get Started
               </button>
+            </div>
 
-              <button
-                onClick={() => setOpen(!open)}
-                className="md:hidden p-2 rounded-full hover:bg-blue-50 transition"
-              >
-                {open ? <X size={24} /> : <Menu size={24} />}
-              </button>
+            <button className="md:hidden px-3 py-2 text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition cursor-pointer">
+              Get Started
+            </button>
+
+            <button
+              onClick={() => setOpen(!open)}
+              className="md:hidden p-2 rounded-full hover:bg-blue-50 transition"
+            >
+              {open ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
       </nav>
+
 
       {/* Blur Background */}
       <div
@@ -96,12 +121,12 @@ export default function Navbar() {
       <aside
         className={`
           fixed top-16.50 left-0 w-72 h-[calc(100vh-64px)]
-          bg-white shadow-lg z-50
+          bg-bg-primary shadow-lg z-50
           transition-transform duration-300
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex flex-col h-full gap-10 p-4">
+        <div className="flex flex-col h-full gap-10 px-4 py-6">
         
           <div className="flex flex-col gap-1">
             {navLinks.map((item) => (
@@ -117,7 +142,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <button className="py-2.75 rounded-lg border font-medium hover:bg-gray-100 transition">
+          <button className="py-2.75 rounded-lg border font-medium hover:bg-gray-100 transition cursor-pointer">
               Login
           </button>
 

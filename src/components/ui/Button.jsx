@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Button({ children, onClick, to, label, variant = "primary", icon, className = "" }) {
-    const base ="px-5 pt-2.75 pb-3 font-semibold text-md sm:text-base rounded-lg transition duration-200 cursor-pointer";
+    const base ="px-5 pt-2.25 pb-2.75 text-sm sm:text-base rounded-lg font-medium transition duration-200 cursor-pointer";
 
     const variants = {
         primary: "bg-blue-600 text-white hover:bg-blue-500",
