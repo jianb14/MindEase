@@ -15,20 +15,20 @@ export default function NavItem({
         mobile
           ? `block py-3 px-4 text-md font-medium transition rounded-lg ${
               isActive
-                ? "text-blue-600 bg-blue-100"
-                : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                ? "text-text-accent bg-blue-100"
+                : "text-text-secondary hover:text-text-accent hover:bg-blue-50"
             }`
           : `relative py-0.5 text-sm font-medium transition
               ${
                 isActive
-                  ? "text-blue-600 after:w-full"
-                  : "text-gray-700 hover:text-blue-600 after:w-0 hover:after:w-full"
+                  ? "text-text-accent after:w-full"
+                  : "text-text-secondary hover:text-text-accent after:w-0 hover:after:w-full"
               }
               after:absolute
               after:left-0
               after:bottom-0
               after:h-0.5
-            after:bg-blue-500
+            after:bg-btn-primary
               after:transition-all
               after:duration-300`
       }

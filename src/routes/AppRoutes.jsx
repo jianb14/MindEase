@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout.jsx";
+import ClickSpark from "../components/ui/ClickSpark.jsx";  
 
 import Home from "../pages/Home.jsx";
 import About from "../pages/About.jsx";
@@ -12,19 +13,21 @@ import Contact from "../pages/Contact.jsx";
 export default function AppRoutes() {
     return (
 
-        <BrowserRouter>
-            <Routes>
-                <Route element={<MainLayout />}>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/therapists" element={<Therapists />} />
-                    <Route path="/resources" element={<Resources />} />
-                    <Route path="/pricing" element={<Pricing />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        <ClickSpark sparkColor="#138fe7" sparkSize={12} sparkCount={8}>
+            <BrowserRouter>
+                <Routes>
+                    <Route element={<MainLayout />}>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/services" element={<Services />} />
+                        <Route path="/therapists" element={<Therapists />} />
+                        <Route path="/resources" element={<Resources />} />
+                        <Route path="/pricing" element={<Pricing />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </ClickSpark>
 
     );
 }
