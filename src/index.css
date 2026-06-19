@@ -6,11 +6,14 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  
   --color-bg-primary: #f7fafc;
+  --color-btn-primary: #138fe7;
   --color-secondary: #22c55e;
 
   --color-text-primary: #111827;
   --color-text-secondary: #374151;
+  --color-text-accent: #374151;
 
   --font-sans: "Inter", sans-serif;
   --font-serif: "Poppins", sans-serif;

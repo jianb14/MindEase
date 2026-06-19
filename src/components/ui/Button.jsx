@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 function Button({ children, onClick, to, label, variant = "primary", icon, className = "" }) {
-    const base ="px-5 pt-2.25 pb-2.75 text-sm sm:text-base rounded-lg font-medium transition duration-200 cursor-pointer";
+    const base ="px-5 pt-3 pb-3.5 text-md rounded-lg font-medium transition duration-200 cursor-pointer";
 
     const variants = {
-        primary: "bg-blue-600 text-white hover:bg-blue-500",
+        primary: "bg-btn-primary text-white hover:bg-blue-600",
         secondary: "bg-gray-100 hover:bg-gray-200",
         accent: "bg-white text-black hover:bg-gray-200 border border-gray-300",
         submit: "bg-black text-white py-3 font-medium hover:bg-neutral-800 transition-colors flex items-center gap-2 justify-center flex-row-reverse"

@@ -88,12 +88,12 @@ export default function Navbar() {
                 Login
               </button>
 
-              <button className="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm hover:bg-blue-500 transition cursor-pointer">
+              <button className="px-4 py-2 rounded-lg bg-btn-primary text-white text-sm hover:bg-blue-500 transition cursor-pointer">
                 Get Started
               </button>
             </div>
 
-            <button className="md:hidden px-3 py-2 text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition cursor-pointer">
+            <button className="md:hidden px-3 py-2 text-sm rounded-lg bg-btn-primary text-white hover:bg-blue-500 transition cursor-pointer">
               Get Started
             </button>
 
@@ -142,7 +142,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <button className="py-2.75 rounded-lg border font-medium hover:bg-gray-100 transition cursor-pointer">
+          <button className="py-2.75 rounded-lg text-white bg-black font-medium hover:bg-neutral-900 transition cursor-pointer">
               Login
           </button>
 
