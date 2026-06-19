@@ -1,7 +1,7 @@
 import LogoLoop from "../../components/ui/LogoLoop.jsx";
 import APA from "/src/assets/apa.png"
 import MHA from "/src/assets/mha.png"
-import NIHM from "/src/assets/nihm.png"
+import NIHM from "/src/assets/nihm.jpg"
 import WHO from "/src/assets/who.png"
 
 const logos = [
