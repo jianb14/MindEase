@@ -1,7 +1,8 @@
 import LogoLoop from "../../components/ui/LogoLoop.jsx";
+import APA from "src/assets/apa.png"
 
 const logos = [
-    { src: '/src/assets/apa.png', alt: 'Logo 1' },
+    { src: APA, alt: 'Logo 1' },
     { src: '/src/assets/mha.png', alt: 'Logo 2' },
     { src: '/src/assets/nihm.jpg', alt: 'Logo 3' },
     { src: '/src/assets/who.png', alt: 'Logo 4' },
