@@ -1,10 +1,10 @@
 import LogoLoop from "../../components/ui/LogoLoop.jsx";
 import DotField from "../../components/ui/DotField.jsx";
-import APA from "/src/assets/apa.png"
-import MHA from "/src/assets/mha2.jpg"
-import NIHM from "/src/assets/nihm2.jpg"
-import WHO from "/src/assets/who.png"
-import DOH from "/src/assets/doh.png"
+import APA from "/src/assets/apa.svg"
+import MHA from "/src/assets/mha.svg"
+import NIHM from "/src/assets/nimh.svg"
+import WHO from "/src/assets/who.svg"
+import DOH from "/src/assets/doh.svg"
 
 const logos = [
     { src: APA, alt: 'Logo 1' },
@@ -16,17 +16,18 @@ const logos = [
 
 export default function LogoMarquee() {
     return (
-        <section className="relative overflow-hidden bg-bg-primary w-full">
+        <section className="relative bg-bg-primary w-full -mt-3">
             <div className="absolute inset-0">
                 <DotField />
             </div>
-            <div className="py-15 mx-1 sm:mx-20 md:mx-30 lg:mx-40">
+            <div className="py-15">
                 <LogoLoop
                     logos={logos}
                     speed={60}
-                    logoHeight={60}
-                    gap={60}
+                    logoHeight={70}
+                    gap={80}
                     pauseOnHover
+                    scaleOnHover
                     fadeOut
                 />
             </div>
