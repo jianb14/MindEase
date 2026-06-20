@@ -22,7 +22,7 @@ export default function WhyChoose() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 grid-rows-2 gap-6 sm:mx-6 md:mx-10 mx-0">
                     {cards.map((card, i) => (
-                        <FadeIn key={i} delay={i * 0.1} className="z-2">
+                        <FadeIn key={i} delay={i * 0.2} className="z-2">
                             <div className="bg-white p-7 group rounded-2xl shadow hover:-translate-y-1.75 hover:shadow-lg transition duration-300 h-full">
                                 <div className={`h-12 w-12 flex justify-center items-center ${card.bg} rounded-lg mb-5 transition-transform duration-300 group-hover:scale-115`}>
                                     {card.icon}
