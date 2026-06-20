@@ -6,7 +6,9 @@ import WhyChoose from "../features/home/WhyChoose.jsx"
 export default function Home() {
     return (
         <div className="relative min-h-screen">
-            <DotField />
+            <div className="absolute inset-0 h-full w-full">
+                <DotField />
+            </div>
             <Hero />
             <LogoMarquee />
             <WhyChoose />
