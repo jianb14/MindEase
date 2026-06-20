@@ -10,6 +10,19 @@
   --color-bg-primary: #f7fafc;
   --color-btn-primary: #138fe7;
 
+  --color-blue: #138fe7;
+  --color-blue-ghost: #EAF4FD;
+  --color-red: rgb(220, 38, 38);
+  --color-red-ghost: #FDECEC;
+  --color-green: rgba(5, 150, 105);
+  --color-green-ghost: #E9FBF0;
+  --color-orange: rgb(217, 119, 6);
+  --color-orange-ghost: #FDF0E9;
+  --color-violet: rgb(124, 58, 237);
+  --color-violet-ghost: #F0EAFD;
+  --color-rose: rgb(190, 24, 93);
+  --color-rose-ghost: #FDE9F5;
+
   --color-text-primary: #111827;
   --color-text-secondary: #59677f;
   --color-text-accent: #138fe7;

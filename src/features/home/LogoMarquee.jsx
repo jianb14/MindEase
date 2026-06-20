@@ -16,7 +16,7 @@ const logos = [
 export default function LogoMarquee() {
     return (
         <section className="relative bg-bg-primary w-full">
-            <div className="py-5">
+            <div className="pb-15">
                 <LogoLoop
                     logos={logos}
                     speed={60}
