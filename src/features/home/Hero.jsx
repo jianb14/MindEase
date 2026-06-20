@@ -4,7 +4,7 @@ import DotField from "../../components/ui/DotField.jsx";
 
 export default function Hero() {
     return(
-            <section className="relative overflow-hidden bg-bg-primary h-[85vh] sm:h-screen w-full flex items-center justify-center">
+            <section className="relative overflow-hidden bg-bg-primary h-[85vh] sm:h-screen w-full flex items-center sm:items-start justify-center px-5 sm:px-10 md:px-20 lg:px-60 sm:pt-20">
                 <div className="absolute inset-0">
                     <DotField />
                 </div>
