@@ -4,7 +4,7 @@ import DotField from "../../components/ui/DotField.jsx";
 
 export default function Hero() {
     return(
-            <section className="relative overflow-hidden bg-bg-primary h-screen w-full flex justify-center px-5 pt-16 sm:pt-20">
+            <section className="relative overflow-hidden bg-bg-primary h-[85vh] sm:h-screen w-full flex items-center justify-center">
                 <div className="absolute inset-0">
                     <DotField />
                 </div>
@@ -16,8 +16,8 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-text-primary font-bold text-center mb-6">Your Mental Wellness <br/><span className="text-btn-primary">Journey Starts Here</span></h1>
-                    <p className="text-text-secondary text-sm sm:text-lg text-center mb-10 leading-relaxed">Access professional therapy, guided mindfulness programs, and personalized <br/> mental health support designed to help you thrive every day.</p>
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-text-primary font-bold text-center mb-6">Your Mental Wellness <span className="text-btn-primary">Journey Starts Here</span></h1>
+                    <p className="text-text-secondary text-sm sm:text-lg text-center mb-10 leading-relaxed">Access professional therapy, guided mindfulness programs, and personalized mental health support designed to help you thrive every day.</p>
 
                     <div className="flex justify-center px-10 gap-2.5 flex-col sm:flex-row">
                         <Button

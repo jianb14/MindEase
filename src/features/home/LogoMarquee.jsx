@@ -20,7 +20,7 @@ export default function LogoMarquee() {
             <div className="absolute inset-0">
                 <DotField />
             </div>
-            <div className="py-15">
+            <div className="py-5">
                 <LogoLoop
                     logos={logos}
                     speed={60}
