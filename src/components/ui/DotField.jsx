@@ -46,6 +46,7 @@ const DotField = memo(({
 
     function doResize() {
       const rect = canvas.parentElement.getBoundingClientRect();
+      console.log('DotField parent size:', rect.width, rect.height);
       const w = rect.width;
       const h = rect.height;
 
@@ -228,7 +229,7 @@ const DotField = memo(({
   }, [dotRadius, dotSpacing]);
 
   return (
-    <div className="w-full h-full relative" {...rest}>
+    <div className="fixed inset-0 z-1 pointer-events-none" {...rest}>
       <canvas
         ref={canvasRef}
         style={{
