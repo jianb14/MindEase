@@ -121,11 +121,6 @@ const DotField = memo(({
       if (engagement.current < 0.001) engagement.current = 0;
       const eng = engagement.current;
 
-      if (eng < 0.001 && p.waveAmplitude === 0 && !p.sparkle) {
-        rafRef.current = requestAnimationFrame(tick);
-        return;
-      }
-
       glowOpacity.current += (eng - glowOpacity.current) * 0.08;
 
       if (glowEl) {
