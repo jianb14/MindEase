@@ -142,7 +142,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <button className="py-2.75 rounded-lg text-white bg-black font-medium hover:bg-neutral-900 transition cursor-pointer">
+          <button className="py-2.75 rounded-lg text-white bg-blue font-medium transition cursor-pointer">
               Login
           </button>
 

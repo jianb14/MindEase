@@ -3,10 +3,10 @@ import Button from "../../components/ui/Button.jsx";
 import FadeIn from "../../components/ui/FadeIn.jsx";
 
 const stats = [
-    { icon: Star,           color: "#F59E0B", bg: "#FDF0E9", value: "4.9★",    label: "Satisfaction Rating",  pos: "top-18 left-6 lg:left-20",    anim: "floatA" },
-    { icon: Users,          color: "#10B981", bg: "#E9FBF0", value: "50,000+", label: "Active Members",        pos: "top-22 right-6 lg:right-20",  anim: "floatB" },
+    { icon: Star,           color: "#138fe7", bg: "#EBF3FF", value: "4.9",    label: "Satisfaction Rating",  pos: "top-18 left-6 lg:left-20",    anim: "floatA" },
+    { icon: Users,          color: "#138fe7", bg: "#EBF3FF", value: "50,000+", label: "Active Members",        pos: "top-22 right-6 lg:right-20",  anim: "floatB" },
     { icon: Stethoscope,    color: "#138fe7", bg: "#EBF3FF", value: "500+",    label: "Licensed Therapists",  pos: "bottom-32 left-6 lg:left-24", anim: "floatC" },
-    { icon: HeartHandshake, color: "#EC4899", bg: "#FDE9F5", value: "24/7",    label: "Wellness Support",     pos: "bottom-32 right-6 lg:right-26", anim: "floatD" },
+    { icon: HeartHandshake, color: "#138fe7", bg: "#EBF3FF", value: "24/7",    label: "Wellness Support",     pos: "bottom-32 right-6 lg:right-26", anim: "floatD" },
 ];
 
 export default function Hero() {
@@ -20,7 +20,7 @@ export default function Hero() {
                 return (
                     <div
                     key={i}
-                    className={`absolute ${stat.pos} hidden lg:flex items-center gap-3 bg-white rounded-2xl border border-gray-100 px-4 py-3 z-10 shadow-xs hover:scale-110 transition duration-300`}
+                    className={`absolute ${stat.pos} hidden lg:flex items-center gap-3 bg-white rounded-2xl border border-gray-100 px-4 py-3 z-10 shadow-xs hover:shadow-md hover:scale-110 transition duration-300`}
                     style={{
                         animation: `${stat.anim} 3s ease-in-out infinite`,
                         animationDelay: `${i * 0.4}s`,
@@ -49,7 +49,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <h1 className="text-5xl md:text-6xl font-serif text-text-primary font-bold text-center mb-6">
+                <h1 className="text-4xl md:text-6xl font-serif text-text-primary font-bold text-center mb-6">
                     Your Mental Wellness <span className="text-btn-primary">Journey Starts Here</span>
                 </h1>
                 <p className="lg:mx-12 text-text-secondary text-md sm:text-lg text-center mb-10 leading-relaxed">

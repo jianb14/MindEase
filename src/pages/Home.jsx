@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <div className="relative min-h-screen">
             <div className="absolute inset-0 h-full w-full">
-                <DotField dotSpacing={18}/>
+                <DotField dotSpacing={16}/>
             </div>
             <Hero />
             <LogoMarquee />
