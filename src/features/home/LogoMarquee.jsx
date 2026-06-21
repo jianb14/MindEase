@@ -16,14 +16,14 @@ const logos = [
 export default function LogoMarquee() {
     return (
         <section className="relative bg-bg-primary w-full">
-            <div className="py-15 sm:pt-0 sm:px-10 md:px-30 lg:px-50">
-                <h4 className="text-blue mb-12 text-center font-medium">Trusted by Individuals, Families, and Organizations</h4>
+            <div className="py-20 sm:pt-0 sm:px-10 md:px-30 lg:px-50">
+                <h4 className="text-blue mb-12 text-center font-medium mx-4">Trusted by Individuals, Families, and Organizations</h4>
                 
                 <LogoLoop
                     logos={logos}
                     speed={60}
                     logoHeight={50}
-                    gap={60}
+                    gap={30}
                     pauseOnHover
                     scaleOnHover
                     fadeOut
