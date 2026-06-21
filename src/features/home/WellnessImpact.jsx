@@ -1,0 +1,43 @@
+import CountUp from "../../components/ui/CountUp.jsx";
+import FadeIn from "../../components/ui/FadeIn.jsx";
+
+const stats = [
+    { value: 5000, suffix: "+", label: "Happy Members",       sublabel: "Worldwide community",     color: "#138fe7" },
+    { value: 100,  suffix: "+", label: "Licensed Experts",    sublabel: "Certified professionals", color: "#10B981" },
+    { value: 95,   suffix: "%", label: "Positive Outcomes",   sublabel: "Proven effectiveness",    color: "#F59E0B" },
+    { value: 24,   suffix: "/7",label: "Support Availability",sublabel: "Always here for you",     color: "#EC4899" },
+];
+
+export default function WellnessImpact() {
+    return (
+        <section className="relative w-full bg-bg-primary flex justify-center py-30 sm:py-40 px-4 lg:px-10">
+        <div className="w-full max-w-5xl">
+            <FadeIn>
+            <div className="text-center mb-16">
+                <p className="font-medium text-text-accent text-sm uppercase tracking-widest mb-4">
+                Wellness Impact
+                </p>
+                <h2 className="font-black text-4xl text-text-primary">
+                The Numbers Speak for Themselves
+                </h2>
+            </div>
+            </FadeIn>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {stats.map((stat, i) => (
+                <FadeIn key={i} delay={i * 0.15} className="z-3">
+                <div className="bg-white/70 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-300">
+                    <p className="text-4xl font-black mb-2" style={{ color: stat.color }}>
+                    <CountUp to={stat.value} duration={1} delay={i * 0.2} separator="," />
+                    {stat.suffix}
+                    </p>
+                    <p className="font-bold text-text-primary mb-1">{stat.label}</p>
+                    <p className="text-sm text-text-secondary">{stat.sublabel}</p>
+                </div>
+                </FadeIn>
+            ))}
+            </div>
+        </div>
+        </section>
+    );
+}

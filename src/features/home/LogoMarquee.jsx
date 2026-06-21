@@ -9,8 +9,8 @@ import DOH from "/src/assets/doh.svg"
 const logos = [
     { src: APA, alt: 'Logo 1' },
     { src: MHA, alt: 'Logo 2' },
-    { src: NIHM, alt: 'Logo 3' },
-    { src: WHO, alt: 'Logo 4' },
+    { src: WHO, alt: 'Logo 3' },
+    { src: NIHM, alt: 'Logo 4' },
     { src: DOH, alt: 'Logo 4' },
 ];
 

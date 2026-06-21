@@ -53,7 +53,7 @@ export default function HowItWorks() {
         </FadeIn>
 
         <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div className="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] z-0 border-t-2 border-dashed border-gray-300" />       
+          <div className="hidden lg:block absolute top-12 left-[12.5%] right-[12.5%] z-0 border-t-2 border-dashed border-gray-300" />       
 
           {steps.map((step, index) => {
             const Icon = step.icon;

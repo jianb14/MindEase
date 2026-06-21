@@ -25,7 +25,7 @@ export default function WhyChoose() {
                         <FadeIn key={i} delay={i * 0.1} className="z-2 relative pt-4">
                             <div className={`relative bg-white p-7 group rounded-2xl shadow hover:-translate-y-1.75 hover:shadow-lg transition duration-300 h-full ${card.card} hover:rotate-0`}>
                             {/* tape nasa loob ng card */}
-                            <div className={`absolute -top-3.5 ${card.tape} z-3 w-20 h-7 bg-blue-ghost/70 rounded-sm shadow-sm`}></div>
+                            <div className={`absolute -top-3.5 ${card.tape} z-3 w-20 h-7 bg-blue-accent/70 rounded-sm shadow-sm`}></div>
                             <div className={`h-12 w-12 flex justify-center items-center ${card.bg} rounded-lg mb-5 transition-transform group-hover:bg-blue-accent duration-300 group-hover:scale-115`}>
                                 {card.icon}
                             </div>
