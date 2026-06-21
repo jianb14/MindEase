@@ -26,7 +26,7 @@ export default function HomeCTA() {
 
                     <div className="flex justify-center gap-4 flex-col sm:flex-row mb-8">
                         <Button label="Get Started Now" icon={ArrowRight} className="flex justify-center"/>
-                        <button className="px-6 py-3 rounded-lg border border-neutral-200 bg-white/60 backdrop-blur-sm text-neutral-600 font-semibold hover:bg-blue-50 transition duration-300">
+                        <button className="px-6 py-3 rounded-lg border border-neutral-200 bg-white/70 backdrop-blur-sm text-neutral-600 font-semibold hover:bg-blue-50 transition duration-300">
                         Browse Therapists   
                         </button>
                     </div>
