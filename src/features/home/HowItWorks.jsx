@@ -58,8 +58,8 @@ export default function HowItWorks() {
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
-              <FadeIn key={step.badge} delay={index * 0.15}>
-                <div className="relative z-10 gap-2 flex flex-col items-center text-center mb-5 lg-mb-0">
+              <FadeIn key={step.badge} delay={index * 0.15} className="relaative z-10">
+                <div className="gap-2 flex flex-col items-center text-center mb-5 lg-mb-0">
                   <div
                     className="relative w-24 h-24 rounded-2xl flex items-center justify-center shadow-lg mb-5 border border-blue/15 hover:scale-110 transition duration-300"
                     style={{ backgroundColor: step.bg }}
@@ -72,7 +72,7 @@ export default function HowItWorks() {
                       {step.badge}
                     </span>
                   </div>
-                  <p className="font-bold text-sm text-text-primary mb-2">{step.title}</p>
+                  <p className="font-bold text-md text-text-primary mb-2 lg:text-sm">{step.title}</p>
                   <p className="text-sm text-text-secondary leading-relaxed">{step.desc}</p>
                 </div>
               </FadeIn>

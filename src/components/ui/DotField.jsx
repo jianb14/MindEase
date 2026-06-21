@@ -36,7 +36,7 @@ const DotField = memo(({
     const glowEl = glowRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d', { alpha: true });
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const dpr = 1;
     let resizeTimer;
 
     function resize() {
@@ -120,6 +120,11 @@ const DotField = memo(({
       engagement.current += (targetEngagement - engagement.current) * 0.06;
       if (engagement.current < 0.001) engagement.current = 0;
       const eng = engagement.current;
+
+      if (eng < 0.001 && p.waveAmplitude === 0 && !p.sparkle) {
+        rafRef.current = requestAnimationFrame(tick);
+        return;
+      }
 
       glowOpacity.current += (eng - glowOpacity.current) * 0.08;
 
