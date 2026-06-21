@@ -12,7 +12,7 @@ const stats = [
 export default function Hero() {
     return (
         <FadeIn>
-            <section className="relative overflow-hidden bg-bg-primary h-[84vh] sm:h-screen w-full flex  sm:items-start justify-center px-4 sm:px-10 md:px-20 lg:px-60 sm:pt-20">
+            <section className="relative overflow-hidden bg-bg-primary h-[70vh] sm:h-screen w-full flex  sm:items-start justify-center px-4 sm:px-10 md:px-20 lg:px-60 pt-20">
 
                 {/* floating stat cards */}
                 {stats.map((stat, i) => {
