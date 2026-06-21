@@ -3,9 +3,9 @@ import FadeIn from "../../components/ui/FadeIn.jsx";
 
 const stats = [
     { value: 5000, suffix: "+", label: "Happy Members",       sublabel: "Worldwide community",     color: "#138fe7" },
-    { value: 100,  suffix: "+", label: "Licensed Experts",    sublabel: "Certified professionals", color: "#10B981" },
-    { value: 95,   suffix: "%", label: "Positive Outcomes",   sublabel: "Proven effectiveness",    color: "#F59E0B" },
-    { value: 24,   suffix: "/7",label: "Support Availability",sublabel: "Always here for you",     color: "#EC4899" },
+    { value: 100,  suffix: "+", label: "Licensed Experts",    sublabel: "Certified professionals", color: "#138fe7" },
+    { value: 95,   suffix: "%", label: "Positive Outcomes",   sublabel: "Proven effectiveness",    color: "#138fe7" },
+    { value: 24,   suffix: "/7",label: "Support Availability",sublabel: "Always here for you",     color: "#138fe7" },
 ];
 
 export default function WellnessImpact() {
@@ -23,10 +23,10 @@ export default function WellnessImpact() {
             </div>
             </FadeIn>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {stats.map((stat, i) => (
                 <FadeIn key={i} delay={i * 0.15} className="z-3">
-                <div className="bg-white/70 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-300">
+                <div className="bg-white/70 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 text-center shadow-sm transition duration-300">
                     <p className="text-4xl font-black mb-2" style={{ color: stat.color }}>
                     <CountUp to={stat.value} duration={1} delay={i * 0.2} separator="," />
                     {stat.suffix}

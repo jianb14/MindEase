@@ -4,6 +4,7 @@ import LogoMarquee from "../features/home/LogoMarquee.jsx"
 import WhyChoose from "../features/home/WhyChoose.jsx"
 import HowItWorks from "../features/home/HowItWorks.jsx"
 import WellnessImpact from "../features/home/WellnessImpact.jsx"
+import HomeCTA from "../features/home/HomeCTA.jsx"
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
             <WhyChoose />
             <HowItWorks />
             <WellnessImpact />
+            <HomeCTA />
             
         </div>
     );
