@@ -38,7 +38,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="relative bg-bg-primary w-full flex justify-center py-40 px-4 lg:px-10">
+    <section className="relative bg-bg-primary w-full flex justify-center py-30 sm:py-40 px-4 lg:px-10">
       <div className="w-full max-w-6xl">
         <FadeIn>
           <div className="mb-16 text-center">

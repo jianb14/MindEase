@@ -12,7 +12,7 @@ const cards = [
 
 export default function WhyChoose() {
     return (
-        <section className="relative bg-bg-primary w-full flex justify-center py-40 px-4 lg:px-10">
+        <section className="relative bg-bg-primary w-full flex justify-center py-30 sm:py-40 px-4 lg:px-10">
             <div>
                 <FadeIn className="mx-0 lg:mx-50 mb-15">
                     <p className="font-medium text-text-accent text-center mb-4">Why Choose MindEase</p>
