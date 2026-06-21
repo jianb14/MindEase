@@ -16,7 +16,7 @@ export default function AboutCTA() {
                     </p>
                     <div className="flex justify-center gap-4 flex-col sm:flex-row">
                         <Button label="Get Started for Free" icon={ArrowRight} className="flex justify-center"/>
-                        <button className="px-6 py-3 rounded-lg border z-1 bg-bg-primary border-neutral-200 text-neutral-600 font-semibold hover:bg-blue-50 transition duration-300">
+                        <button className="px-6 py-3 rounded-lg border z-1 bg-bg-primary border-neutral-100 text-neutral-600 font-semibold hover:bg-blue-50 transition duration-300">
                         Learn More
                         </button>
                     </div>
