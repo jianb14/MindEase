@@ -10,7 +10,7 @@ export default function HomeCTA() {
                     <div className="w-full max-w-3xl text-center">
 
                     {/* top badge */}
-                    <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-gray-200 bg-white/80 backdrop-blur-sm text-xs font-semibold text-text-secondary mb-8">
+                    <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-gray-200 dark:border-white/5 bg-bg-card/70 backdrop-blur-sm text-xs font-semibold text-text-secondary mb-8">
                         <ShieldCheck size={14} className="text-text-accent" />
                         No commitment. Cancel anytime.
                     </div>

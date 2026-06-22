@@ -26,7 +26,7 @@ export default function WellnessImpact() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {stats.map((stat, i) => (
                 <FadeIn key={i} delay={i * 0.15} className="z-3">
-                <div className="bg-white/70 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 text-center shadow-sm transition duration-300">
+                <div className="bg-bg-card backdrop-blur-sm border border-color-outline rounded-2xl p-8 text-center shadow-sm transition duration-300">
                     <p className="text-4xl font-black mb-2" style={{ color: stat.color }}>
                     <CountUp to={stat.value} duration={1} delay={i * 0.2} separator="," />
                     {stat.suffix}

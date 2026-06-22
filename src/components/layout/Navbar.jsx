@@ -85,19 +85,23 @@ export default function Navbar() {
           {/* Right Side */}
           <div className="flex gap-1 items-center">
             <div className="hidden md:flex gap-2 -mt-1">
-              <ThemeToggle /> 
-              <Link
-                to="/login"
-                className="px-4 py-1.5 rounded-lg text-sm transition cursor-pointer bg-white border  hover:bg-gray-50 shadow-[0_5px_0_#d1d5db] text-neutral-500"
-              >
-                Login
-              </Link>
-              <Link
-                to="/register"
-                className="px-4 py-1.5 rounded-lg bg-btn-primary text-white text-sm shadow-[0_5px_0_#0f74ba] hover:bg-blue-500 transition flex items-center cursor-pointer"
-              >
-                Get Started
-              </Link>
+              <div className="mt-1">
+                  <ThemeToggle/> 
+              </div>
+              <div className="flex gap-2 my-1.5">
+                <Link
+                  to="/login"
+                  className="px-4 py-1 rounded-lg text-sm transition cursor-pointer bg-white border flex items-center hover:bg-gray-50 shadow-[0_5px_0_#d1d5db] text-neutral-500"
+                >
+                  Login
+                </Link>
+                <Link
+                  to="/register"
+                  className="px-4 py-1 rounded-lg bg-btn-primary text-white text-sm shadow-[0_5px_0_#0f74ba] hover:bg-blue-500 transition flex items-center cursor-pointer"
+                >
+                  Get Started
+                </Link>
+              </div>
             </div>
 
             <Link

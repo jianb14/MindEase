@@ -28,6 +28,10 @@
   --color-rose: rgb(190, 24, 93);
   --color-rose-ghost: #FDE9F5;
 
+  --color-color-outline: rgba(255,255,255,.04);
+  --color-bg-card: white;
+  --color-tape: #ecf6fe;
+
   --color-text-primary: #111827;
   --color-text-secondary: #59677f;
   --color-text-accent: #138fe7;
@@ -43,9 +47,13 @@
   --color-btn-secondary: #1e2a3a;
   --color-btn-secondary-hover: #243245;
 
+  --color-color-outline: rgba(255,255,255,.04);
+  --color-bg-card: #172032;
+  --color-tape: #121b2e;
+
   --color-blue: #138fe7;
-  --color-blue-ghost: #1a2433;
-  --color-blue-accent: #16202e;
+  --color-blue-ghost: #1a2439;
+  --color-blue-accent: #172036;
 
   --color-text-primary: "white";
   --color-text-secondary: #9aa7b5;

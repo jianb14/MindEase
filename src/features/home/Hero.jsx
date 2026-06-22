@@ -3,10 +3,10 @@ import Button from "../../components/ui/Button.jsx";
 import FadeIn from "../../components/ui/FadeIn.jsx";
 
 const stats = [
-    { icon: Star,           color: "#138fe7", bg: "#EBF3FF", value: "4.9",    label: "Satisfaction Rating",  pos: "top-18 left-6 lg:left-20",    anim: "floatA" },
-    { icon: Users,          color: "#138fe7", bg: "#EBF3FF", value: "50,000+", label: "Active Members",        pos: "top-22 right-6 lg:right-20",  anim: "floatB" },
-    { icon: Stethoscope,    color: "#138fe7", bg: "#EBF3FF", value: "500+",    label: "Licensed Therapists",  pos: "bottom-32 left-6 lg:left-24", anim: "floatC" },
-    { icon: HeartHandshake, color: "#138fe7", bg: "#EBF3FF", value: "24/7",    label: "Wellness Support",     pos: "bottom-32 right-6 lg:right-26", anim: "floatD" },
+    { icon: Star,           value: "4.9",     label: "Satisfaction Rating",  pos: "top-18 left-6 lg:left-20",    anim: "floatA" },
+    { icon: Users,          value: "50,000+", label: "Active Members",       pos: "top-22 right-6 lg:right-20",  anim: "floatB" },
+    { icon: Stethoscope,    value: "500+",    label: "Licensed Therapists",  pos: "bottom-32 left-6 lg:left-24", anim: "floatC" },
+    { icon: HeartHandshake, value: "24/7",    label: "Wellness Support",     pos: "bottom-32 right-6 lg:right-26", anim: "floatD" },
 ];
 
 export default function Hero() {
@@ -20,14 +20,14 @@ export default function Hero() {
                 return (
                     <div
                     key={i}
-                    className={`absolute ${stat.pos} hidden lg:flex items-center gap-3 bg-white rounded-2xl border border-gray-100 px-4 py-3 z-10 shadow-xs hover:shadow-md hover:scale-110 transition duration-300`}
+                    className={`absolute ${stat.pos} hidden lg:flex items-center gap-3 bg-bg-card rounded-2xl border border-color-outline px-4 py-3 z-10 shadow-xs hover:shadow-md hover:scale-110 transition duration-300`}
                     style={{
                         animation: `${stat.anim} 3s ease-in-out infinite`,
                         animationDelay: `${i * 0.4}s`,
                     }}
                     >
                     <div
-                        className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
+                        className="w-10 h-10 rounded-lg flex items-center text-blue bg-blue-ghost justify-center shrink-0"
                         style={{ backgroundColor: stat.bg }}
                     >
                         <Icon size={20} style={{ color: stat.color }} />
@@ -43,7 +43,7 @@ export default function Hero() {
                 {/* center content */}
                 <div className="relative z-10">
                 <div className="flex justify-center mb-5">
-                    <div className="flex gap-1.25 py-2 px-3 rounded-2xl bg-blue-50">
+                    <div className="flex gap-1.25 py-2 px-3 rounded-2xl bg-blue-ghost">
                     <CircleCheckBig size={15} className="text-text-accent" />
                     <p className="text-xs text-text-accent font-bold">Trusted by 50,000+ Members</p>
                     </div>
