@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import NavItem from "../ui/NavItem";
 import logo from "/src/assets/mindease-logo.png";
 import { 
@@ -84,18 +85,26 @@ export default function Navbar() {
           {/* Right Side */}
           <div className="flex gap-1 items-center">
             <div className="hidden md:flex gap-2">
-              <button className="px-4 py-2 rounded-lg hover:bg-blue-50 text-sm transition cursor-pointer">
+              <Link
+                to="/login"
+                className="px-4 py-2 rounded-lg hover:bg-blue-50 text-sm transition cursor-pointer"
+              >
                 Login
-              </button>
-
-              <button className="px-4 py-2 rounded-lg bg-btn-primary text-white text-sm hover:bg-blue-500 transition cursor-pointer">
+              </Link>
+              <Link
+                to="/register"
+                className="px-4 py-2 rounded-lg bg-btn-primary text-white text-sm hover:bg-blue-500 transition cursor-pointer"
+              >
                 Get Started
-              </button>
+              </Link>
             </div>
 
-            <button className="md:hidden px-3 py-2 text-sm rounded-lg bg-btn-primary text-white hover:bg-blue-500 transition cursor-pointer">
+            <Link
+              to="/register"
+              className="md:hidden px-3 py-2 text-sm rounded-lg bg-btn-primary text-white hover:bg-blue-500 transition cursor-pointer"
+            >
               Get Started
-            </button>
+            </Link>
 
             <button
               onClick={() => setOpen(!open)}
@@ -142,9 +151,12 @@ export default function Navbar() {
             ))}
           </div>
 
-          <button className="py-2.75 rounded-lg text-white bg-blue font-medium transition cursor-pointer">
-              Login
-          </button>
+          <Link
+            to="/login"
+            className="py-2.75 rounded-lg text-white bg-blue font-medium transition cursor-pointer text-center"
+          >
+            Login
+          </Link>
 
         </div>
       </aside>

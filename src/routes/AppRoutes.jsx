@@ -10,6 +10,9 @@ import Resources from "../pages/Resources.jsx";
 import Pricing from "../pages/Pricing.jsx";
 import Contact from "../pages/Contact.jsx";
 
+import Login from "../features/auth/Login.jsx"
+import Register from "../features/auth/Register.jsx"
+
 export default function AppRoutes() {
     return (
 
@@ -24,6 +27,8 @@ export default function AppRoutes() {
                         <Route path="/resources" element={<Resources />} />
                         <Route path="/pricing" element={<Pricing />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/register" element={<Register />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
