@@ -153,6 +153,7 @@ export default function Navbar() {
 
           <Link
             to="/login"
+            onClick={() => setOpen(false)}
             className="py-2.75 rounded-lg text-white bg-blue font-medium transition cursor-pointer text-center"
           >
             Login

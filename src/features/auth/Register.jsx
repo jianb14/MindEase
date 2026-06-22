@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import DotField from "../../components/ui/DotField.jsx"; 
 import { Eye, EyeOff, Check } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const perks = [
     { icon: Check,          title: "Matched Instantly",    desc: "Get paired with a licensed therapist in minutes." },
@@ -34,6 +35,13 @@ export default function Register() {
         ? "border-red-400 bg-red-50 outline-none"
         : "border-gray-200 bg-white focus:outline-2 focus:outline-[#138fe7]"
     }`;
+
+    const navigate = useNavigate();
+
+    function onSubmit(data) {
+        console.log("register", data);
+        navigate("/login");
+    }
 
     return (
         <div className="relative min-h-screen bg-bg-primary flex items-center">
@@ -75,7 +83,7 @@ export default function Register() {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="flex-1 flex items-center justify-center px-6 py-12">
+            <div className="flex-1 flex items-center justify-center px-4 py-12">
                 <div className="w-full max-w-md">
 
                 {/* card */}

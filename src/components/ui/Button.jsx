@@ -13,7 +13,7 @@ export default function Button({ children, onClick, to, label, variant = "primar
     const content = (
         <>
             {label}
-            {Icon && <Icon size={20} />}
+            {Icon && <Icon size={18} />}
             {children}
         </>
     );

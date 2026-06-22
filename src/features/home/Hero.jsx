@@ -12,7 +12,7 @@ const stats = [
 export default function Hero() {
     return (
         <FadeIn>
-            <section className="relative overflow-hidden bg-bg-primary h-[60vh] sm:h-screen w-full flex  sm:items-start justify-center px-4 sm:px-10 md:px-20 lg:px-60 pt-16 sm:pt-20">
+            <section className="relative overflow-hidden bg-bg-primary h-[90vh] sm:h-screen w-full flex  sm:items-start justify-center px-4 sm:px-10 md:px-20 lg:px-60 pt-16 sm:pt-20">
 
                 {/* floating stat cards */}
                 {stats.map((stat, i) => {
@@ -56,13 +56,13 @@ export default function Hero() {
                     Access professional therapy, guided mindfulness programs, and personalized mental health support designed to help you thrive every day.
                 </p>
 
-                <div className="flex justify-center px-10 gap-2.5 flex-col sm:flex-row">
-                    <Button label="Start your Journey" />
+                <div className="flex justify-center px-14 gap-2.5 flex-col sm:flex-row">
+                    <Button label="Start your Journey" className="flex justify-center" />
                     <div className="flex items-center justify-center gap-2 pb-3 pt-2.75 px-4 border bg-bg-primary border-neutral-200 rounded-lg hover:bg-blue-50 cursor-pointer">
-                    <div className="bg-text-accent p-1.5 rounded-full">
-                        <Play stroke="white" fill="white" size={12} />
-                    </div>
-                    <a className="text-neutral-600 font-semibold text-md">Watch How it Works</a>
+                        <div className="bg-text-accent p-1.5 rounded-full">
+                            <Play stroke="white" fill="white" size={12} />
+                        </div>
+                        <a className="text-neutral-600 font-semibold text-md">Watch How it Works</a>
                     </div>
                 </div>
                 </div>
