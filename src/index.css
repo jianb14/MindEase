@@ -11,7 +11,7 @@
   --color-btn-primary: #138fe7;
   --color-btn-primary-hover: #289bef;
   --color-btn-secondary: #e8f4ff;
-  --color-btn-secondary-hover: #289bef;
+  --color-btn-secondary-hover: #eaf6ff;
 
 
   --color-blue: #138fe7;
@@ -34,6 +34,21 @@
 
   --font-sans: "Inter", sans-serif;
   --font-serif: "Poppins", sans-serif;
+}
+
+.dark {
+  --color-bg-primary: #0f1729;
+  --color-btn-primary: #138fe7;        /* same lang yung blue, ok pa rin sa dark */
+  --color-btn-primary-hover: #3aa3f0;
+  --color-btn-secondary: #1e2a3a;
+  --color-btn-secondary-hover: #243245;
+
+  --color-blue: #138fe7;
+  --color-blue-ghost: #1a2433;
+  --color-blue-accent: #16202e;
+
+  --color-text-primary: "white";
+  --color-text-secondary: #9aa7b5;
 }
 
 @theme inline {

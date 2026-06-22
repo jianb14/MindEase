@@ -2,7 +2,7 @@ import CountUp from "../../components/ui/CountUp.jsx";
 import FadeIn from "../../components/ui/FadeIn.jsx";
 
 const stats = [
-    { value: 5000, suffix: "+", label: "Happy Members",       sublabel: "Worldwide community",     color: "#138fe7" },
+    { value: 25000, suffix: "+", label: "Happy Members",       sublabel: "Worldwide community",     color: "#138fe7" },
     { value: 100,  suffix: "+", label: "Licensed Experts",    sublabel: "Certified professionals", color: "#138fe7" },
     { value: 95,   suffix: "%", label: "Positive Outcomes",   sublabel: "Proven effectiveness",    color: "#138fe7" },
     { value: 24,   suffix: "/7",label: "Support Availability",sublabel: "Always here for you",     color: "#138fe7" },

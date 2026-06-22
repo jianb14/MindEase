@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import NavItem from "../ui/NavItem";
+import NavItem from "../ui/NavItem.jsx";
 import logo from "/src/assets/mindease-logo.png";
+import ThemeToggle from "../ui/ThemeToggle.jsx";
 import { 
   Menu,
   X, 
@@ -13,8 +14,6 @@ import {
   CreditCard,
   Phone, 
 } from "lucide-react";
-import Button from "../ui/Button";
-
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -66,8 +65,8 @@ export default function Navbar() {
           transition-all duration-500
           ${
             scrolled
-              ? "bg-white/60 backdrop-blur-xl border border-white/30 shadow-xs"
-              : "bg-bg-primary backdrop-blur-lg border border-white/10"
+              ? "bg-white/60 dark:bg-bg-primary/60 dark:border-b-white/10  backdrop-blur-xl border border-b-white/30 shadow-xs"
+              : "bg-bg-primary dark:bg-bg-primary dark:border-bg-primary backdrop-blur-lg border border-b-white/10"
           }
         `}
       >
@@ -86,6 +85,7 @@ export default function Navbar() {
           {/* Right Side */}
           <div className="flex gap-1 items-center">
             <div className="hidden md:flex gap-2 -mt-1">
+              <ThemeToggle /> 
               <Link
                 to="/login"
                 className="px-4 py-1.5 rounded-lg text-sm transition cursor-pointer bg-white border  hover:bg-gray-50 shadow-[0_5px_0_#d1d5db] text-neutral-500"
