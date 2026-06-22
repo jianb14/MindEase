@@ -151,7 +151,7 @@ export default function Navbar() {
               </NavItem>
             ))}
           </div>
-
+          
           <Link
             to="/login"
             onClick={() => setOpen(false)}
@@ -159,6 +159,8 @@ export default function Navbar() {
           >
             Login
           </Link>
+
+          <ThemeToggle /> 
 
         </div>
       </aside>
