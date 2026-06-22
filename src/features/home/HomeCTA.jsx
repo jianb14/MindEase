@@ -25,10 +25,8 @@ export default function HomeCTA() {
                     </p>
 
                     <div className="flex justify-center px-8 sm:px-0 gap-4 flex-col sm:flex-row mb-8">
-                        <Button label="Get Started Now" icon={ArrowRight} className="flex justify-center"/>
-                        <button className="px-6 py-3 rounded-lg border border-neutral-100 bg-white/80 backdrop-blur-sm shadow-[0px_3px_0_rgba(0,0,0,0.2)] text-neutral-600 font-semibold hover:bg-blue-50 transition duration-300">
-                        Browse Therapists   
-                        </button>
+                        <Button label="Get Started Now" to="/register" icon={ArrowRight} />
+                        <Button label="Browse Therapists" to="/therapists" variant="secondary" />
                     </div>
 
                     {/* trust text */}

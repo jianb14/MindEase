@@ -13,6 +13,7 @@ import {
   CreditCard,
   Phone, 
 } from "lucide-react";
+import Button from "../ui/Button";
 
 
 export default function Navbar() {
@@ -84,16 +85,16 @@ export default function Navbar() {
 
           {/* Right Side */}
           <div className="flex gap-1 items-center">
-            <div className="hidden md:flex gap-2">
+            <div className="hidden md:flex gap-2 -mt-1">
               <Link
                 to="/login"
-                className="px-4 py-2 rounded-lg hover:bg-blue-50 text-sm transition cursor-pointer"
+                className="px-4 py-1.5 rounded-lg text-sm transition cursor-pointer bg-white border  hover:bg-gray-50 shadow-[0_5px_0_#d1d5db] text-neutral-500"
               >
                 Login
               </Link>
               <Link
                 to="/register"
-                className="px-4 py-2 rounded-lg bg-btn-primary text-white text-sm hover:bg-blue-500 transition cursor-pointer"
+                className="px-4 py-1.5 rounded-lg bg-btn-primary text-white text-sm shadow-[0_5px_0_#0f74ba] hover:bg-blue-500 transition flex items-center cursor-pointer"
               >
                 Get Started
               </Link>
@@ -101,7 +102,7 @@ export default function Navbar() {
 
             <Link
               to="/register"
-              className="md:hidden px-3 py-2 text-sm rounded-lg bg-btn-primary text-white hover:bg-blue-500 transition cursor-pointer"
+              className="md:hidden px-3 py-1.5 text-sm rounded-lg bg-btn-primary -mt-1 shadow-[0_5px_0_#0f74ba] text-white hover:bg-blue-500 transition cursor-pointer"
             >
               Get Started
             </Link>
@@ -154,7 +155,7 @@ export default function Navbar() {
           <Link
             to="/login"
             onClick={() => setOpen(false)}
-            className="py-2.75 rounded-lg text-white bg-blue font-medium transition cursor-pointer text-center"
+            className="py-2.75 rounded-lg text-white bg-btn-primary shadow-[0_6px_0_#0f74ba] font-medium transition cursor-pointer text-center"
           >
             Login
           </Link>

@@ -57,8 +57,8 @@ export default function Hero() {
                 </p>
 
                 <div className="flex justify-center px-10 md:px-0 gap-2.5 flex-col sm:flex-row">
-                    <Button label="Start your Journey" className="flex justify-center mb-2 sm:mb-0" />
-                    <div className="flex items-center justify-center gap-2 px-4 pt-3 pb-3.25 bg-[#cfe6fb] shadow-[0_6px_0_#a7d3fa] rounded-lg hover:bg-blue-50 cursor-pointer">
+                    <Button label="Start your Journey" to="/therapists" className="flex justify-center mb-2 sm:mb-0" />
+                    <div className="flex items-center justify-center gap-2 px-4 pt-3 pb-3.25 bg-btn-secondary shadow-[0_6px_0_#cfe6fb] rounded-lg hover:bg-btn-secondary-hover cursor-pointer">
                         <div className="bg-text-accent p-1.5 rounded-full">
                             <Play stroke="white" fill="white" size={12} />
                         </div>

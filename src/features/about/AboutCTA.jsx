@@ -15,10 +15,8 @@ export default function AboutCTA() {
                         Join thousands of members who have already taken the first step toward better mental health. Your journey starts with a single click.
                     </p>
                     <div className="flex justify-center px-8 sm:px-0 gap-4 flex-col sm:flex-row">
-                        <Button label="Get Started for Free" icon={ArrowRight} className="flex justify-center"/>
-                        <button className="px-6 py-3 rounded-lg border z-1 bg-bg-primary border-neutral-100 text-neutral-600 font-semibold hover:bg-blue-50 transition duration-300">
-                        Learn More
-                        </button>
+                        <Button label="Get Started for Free" variant="primary" icon={ArrowRight}/>
+                        <Button label="Learn More" variant="secondary"/>
                     </div>
                     </div>
                 </FadeIn>

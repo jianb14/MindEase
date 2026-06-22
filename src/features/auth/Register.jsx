@@ -200,7 +200,7 @@ export default function Register() {
                     <button
                         onClick={handleSubmit(onSubmit)}
                         disabled={isSubmitting}
-                        className="w-full bg-btn-primary text-white py-2.5 rounded-lg font-semibold text-sm hover:bg-blue-600 transition duration-200 mt-2 disabled:opacity-60"
+                        className="w-full bg-btn-primary text-white py-2.5 rounded-lg shadow-[0_5px_0_#0f74ba] hover:bg-btn-primary-hover font-semibold text-sm transition duration-200 mt-2 disabled:opacity-60"
                     >
                         Create Account
                     </button>
