@@ -12,7 +12,7 @@ const stats = [
 export default function Hero() {
     return (
         <FadeIn>
-            <section className="relative overflow-hidden bg-bg-primary h-[60vh] sm:h-screen w-full flex  sm:items-start justify-center px-4 sm:px-10 md:px-20 lg:px-60 pt-16 sm:pt-20">
+            <section className="relative overflow-hidden bg-bg-primary h-[70vh] sm:h-screen w-full flex  sm:items-start justify-center px-4 sm:px-10 md:px-20 lg:px-60 pt-16 sm:pt-20">
 
                 {/* floating stat cards */}
                 {stats.map((stat, i) => {
@@ -57,7 +57,7 @@ export default function Hero() {
                 </p>
 
                 <div className="flex justify-center px-10 md:px-0 gap-2.5 flex-col sm:flex-row">
-                    <Button label="Start your Journey" className="flex justify-center" />
+                    <Button label="Start your Journey" className="flex justify-center mb-4 sm:mb-0" />
                     <div className="flex items-center justify-center gap-2 px-4 bg-[#cfe6fb] shadow-[0_6px_0_#a7d3fa] rounded-lg hover:bg-blue-50 cursor-pointer">
                         <div className="bg-text-accent p-1.5 rounded-full">
                             <Play stroke="white" fill="white" size={12} />
