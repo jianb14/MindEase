@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { Eye, EyeOff, } from "lucide-react";
 import { Link } from "react-router-dom";
-import DotField from "../../components/ui/DotField.jsx"; 
+import DotField from "../../components/ui/DotField.jsx";
+import FadeIn from "../../components/ui/FadeIn.jsx"; 
 
 export default function Login() {
     const [showPassword, setShowPassword] = useState(false);
@@ -33,10 +34,12 @@ export default function Login() {
     }
 
     return (
-        <div className="h-[85vh] bg-bg-primary flex items-center justify-center px-4">
+        <div className="h-[85vh] flex items-center justify-center bg-bg-primary px-4">
+            
             <div className="absolute inset-0 h-full w-full">
                 <DotField dotSpacing={16}/>
             </div>
+            <FadeIn className="w-full flex items-center justify-center z-2">
             <div className="w-full max-w-md relative z-2">
                 <div className={`absolute -top-3.5 left-1/2 -translate-x-1/2 z-3 w-25 h-7 bg-blue-accent rounded-sm shadow-sm`}></div>
 
@@ -116,6 +119,7 @@ export default function Login() {
                     </p>
                 </div>
             </div>
+            </FadeIn>
         </div>
     );
 }

@@ -4,6 +4,7 @@ import DotField from "../../components/ui/DotField.jsx";
 import { Eye, EyeOff, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const perks = [
     { icon: Check,          title: "Matched Instantly",    desc: "Get paired with a licensed therapist in minutes." },
@@ -50,8 +51,12 @@ export default function Register() {
             </div>
 
             {/* LEFT SIDE */}
-            <div className="hidden lg:flex flex-col justify-between w-1/2 px-16 py-12">
-
+            <motion.div
+                className="hidden lg:flex flex-col justify-between w-1/2 px-16 py-12"
+                initial={{ opacity: 0, x: -40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
 
                 <div>
                     <h2 className="font-black text-4xl text-text-primary leading-tight mb-4">
@@ -80,10 +85,15 @@ export default function Register() {
                     </div>
                 </div>
 
-            </div>
+            </motion.div>
 
             {/* RIGHT SIDE */}
-            <div className="flex-1 flex items-center justify-center px-4 py-12">
+            <motion.div
+                className="flex-1 flex items-center z-2 justify-center px-4 py-12"
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+            >
                 <div className="w-full max-w-md">
 
                 {/* card */}
@@ -213,7 +223,7 @@ export default function Register() {
 
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

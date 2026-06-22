@@ -1,4 +1,3 @@
-// src/components/FadeIn.jsx
 import { motion } from "framer-motion"
 
 export default function FadeIn({

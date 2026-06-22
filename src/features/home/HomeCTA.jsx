@@ -24,7 +24,7 @@ export default function HomeCTA() {
                         Join thousands of people who are improving their emotional well-being with expert support and personalized care.
                     </p>
 
-                    <div className="flex justify-center px-12 gap-4 flex-col sm:flex-row mb-8">
+                    <div className="flex justify-center px-8 sm:px-0 gap-4 flex-col sm:flex-row mb-8">
                         <Button label="Get Started Now" icon={ArrowRight} className="flex justify-center"/>
                         <button className="px-6 py-3 rounded-lg border border-neutral-100 bg-white/80 backdrop-blur-sm text-neutral-600 font-semibold hover:bg-blue-50 transition duration-300">
                         Browse Therapists   
