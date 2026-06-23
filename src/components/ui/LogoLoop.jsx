@@ -243,7 +243,7 @@ export const LogoLoop = memo(({
       '[--logoloop-gap:32px]',
       '[--logoloop-logoHeight:28px]',
       '[--logoloop-fadeColorAuto:#f7fafc]',
-      'dark:[--logoloop-fadeColorAuto:#0b0b0b]',
+      'dark:[--logoloop-fadeColorAuto:#0f1729]',
       scaleOnHover && 'py-[calc(var(--logoloop-logoHeight)*0.1)]',
       className
     ), [isVertical, scaleOnHover, className]);

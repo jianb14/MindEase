@@ -32,17 +32,20 @@ export default function HowItWorks() {
   return (
     <section className="relative bg-bg-primary w-full flex justify-center py-30 sm:py-40 px-4 lg:px-10">
       <div className="w-full max-w-6xl">
-        <FadeIn>
           <div className="mb-16 text-center">
-            <p className="font-medium text-text-accent text-sm uppercase tracking-widest mb-4">
-              How It Works
-            </p>
+            <FadeIn delay={0}>
+              <p className="font-medium text-text-accent text-sm uppercase tracking-widest mb-4">
+                How It Works
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.20}>
             <h2 className="font-black text-4xl">
               Start Feeling Better in{" "}
               <span className="text-text-accent">4 Simple Steps</span>
             </h2>
+            </FadeIn>
           </div>
-        </FadeIn>
+  
 
         <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="hidden lg:block absolute top-12 left-[12.5%] right-[12.5%] z-0 border-t-2 border-dashed border-gray-300 dark:border-gray-700" />       

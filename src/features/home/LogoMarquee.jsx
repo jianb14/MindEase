@@ -28,7 +28,15 @@ export default function LogoMarquee() {
                     pauseOnHover
                     scaleOnHover
                     fadeOut
-                    className="dark:invert"
+                    fadeOutColor="var(--color-bg-primary)"
+                    renderItem={(item) => (
+                        <img
+                        src={item.src}
+                        alt={item.alt}
+                        className="h-(--logoloop-logoHeight) w-auto object-contain dark:invert dark:opacity-80"
+                        draggable={false}
+                        />
+                    )}
                 />
 
                 <div className="flex justify-center gap-4 mt-18 flex-wrap">

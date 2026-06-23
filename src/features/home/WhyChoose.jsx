@@ -14,11 +14,17 @@ export default function WhyChoose() {
     return (
         <section className="relative bg-bg-primary w-full flex justify-center py-30 sm:py-40 px-4 lg:px-10">
             <div>
-                <FadeIn className="mx-0 lg:mx-50 mb-15">
-                    <p className="font-medium text-center text-text-accent text-sm uppercase tracking-widest mb-4">Why Choose MindEase</p>
-                    <h1 className="font-black text-4xl text-center mb-4">Everything You Need to <span className="text-text-accent">Thrive</span></h1>
-                    <p className="text-md sm:text-lg text-text-secondary text-center mx-0 sm:mx-10 md:mx-15 lg:mx-20">A complete wellness ecosystem designed around you, from therapy to mindfulness, community to progress tracking.</p>
-                </FadeIn>
+                <div className="mx-0 lg:mx-50 mb-15">
+                    <FadeIn delay={0}>
+                        <p className="font-medium text-center text-text-accent text-sm uppercase tracking-widest mb-4">Why Choose MindEase</p>
+                    </FadeIn>
+                    <FadeIn delay={0.15}>
+                        <h1 className="font-black text-4xl text-center mb-4">Everything You Need to <span className="text-text-accent">Thrive</span></h1>
+                    </FadeIn>
+                    <FadeIn delay={0.30}>
+                        <p className="text-md sm:text-lg text-text-secondary text-center mx-0 sm:mx-10 md:mx-15 lg:mx-20">A complete wellness ecosystem designed around you, from therapy to mindfulness, community to progress tracking.</p>
+                    </FadeIn>
+                </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 grid-rows-2 gap-6 sm:mx-6 md:mx-10 mx-0">
                     {cards.map((card, i) => (
