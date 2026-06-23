@@ -33,15 +33,15 @@ export default function LogoMarquee() {
                 <div className="flex justify-center gap-4 mt-18 flex-wrap">
                     <div className="flex items-center gap-1 bg-blue-ghost relative z-5 py-1.5 px-2.5 rounded-2xl">
                         <ShieldCheck size={16} className="text-blue"/>
-                        <p className="text-xs font-medium text-gray-500">HIPAA Compliant</p>
+                        <p className="text-xs font-medium text-text-secondary">HIPAA Compliant</p>
                     </div>
                     <div className="flex items-center gap-1 bg-blue-ghost relative z-5 py-1.5 px-2.5 rounded-2xl">
                         <Award size={16} className="text-blue"/>
-                        <p className="text-xs font-medium text-gray-500">APA Accredited</p>
+                        <p className="text-xs font-medium text-text-secondary">APA Accredited</p>
                     </div>
                     <div className="flex items-center gap-1 bg-blue-ghost relative z-5 py-1.5 px-2.5 rounded-2xl">
                         <Lock size={15} className="text-blue"/>
-                        <p className="text-xs font-medium text-gray-500">256-bit SSL Encrypted</p>
+                        <p className="text-xs font-medium text-text-secondary">256-bit SSL Encrypted</p>
                     </div>
                 </div>
             </div>

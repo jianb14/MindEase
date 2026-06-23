@@ -5,12 +5,12 @@ import Button from "../../components/ui/Button.jsx";
 export default function HomeCTA() {
     return (
         <section className="relative w-full flex justify-center py-20 sm:py-30 px-4 lg:px-10 bg-bg-primary">
-            <div className="bg-blue-accent z-2 py-18 px-4 md:px-30 rounded-[2rem] border">
+            <div className="bg-bg-card z-2 py-18 px-4 md:px-30 rounded-[2rem] border">
                 <FadeIn>
                     <div className="w-full max-w-3xl text-center">
 
                     {/* top badge */}
-                    <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-gray-200 dark:border-white/5 bg-bg-card/70 backdrop-blur-sm text-xs font-semibold text-text-secondary mb-8">
+                    <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-gray-200 dark:border-white/5 bg-blue-ghost/50 backdrop-blur-sm text-xs font-semibold text-text-secondary mb-8">
                         <ShieldCheck size={14} className="text-text-accent" />
                         No commitment. Cancel anytime.
                     </div>
@@ -26,7 +26,7 @@ export default function HomeCTA() {
 
                     <div className="flex justify-center px-8 sm:px-0 gap-4 flex-col sm:flex-row mb-8">
                         <Button label="Get Started Now" to="/register" icon={ArrowRight} />
-                        <Button label="Browse Therapists" to="/therapists" variant="secondary" />
+                        <Button label="Browse Therapists" to="/therapists" variant="accent" />
                     </div>
 
                     {/* trust text */}

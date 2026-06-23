@@ -5,7 +5,7 @@ import Button from "../../components/ui/Button.jsx";
 export default function AboutCTA() {
     return (
         <section className="relative w-full flex justify-center py-20 sm:py-30 px-4 lg:px-10 bg-bg-primary">
-            <div className="bg-blue-accent z-2 py-18 px-4 md:px-24 rounded-[2rem] border">
+            <div className="bg-bg-card z-2 py-18 px-4 md:px-24 rounded-[2rem] border">
                 <FadeIn>
                     <div className="w-full max-w-3xl text-center">
                     <h2 className="font-black text-4xl sm:text-5xl text-text-primary mb-6">

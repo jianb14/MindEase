@@ -15,8 +15,8 @@ export default function NavItem({
         mobile
           ? `block py-3 px-4 text-md font-medium transition rounded-lg ${
               isActive
-                ? "text-text-accent bg-blue-100"
-                : "text-text-secondary hover:text-text-accent hover:bg-blue-50"
+                ? "text-text-accent bg-blue-ghost"
+                : "text-text-secondary hover:text-text-accent hover:bg-blue-ghost"
             }`
           : `relative py-0.5 text-sm font-medium transition
               ${

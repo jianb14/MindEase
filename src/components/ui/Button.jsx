@@ -6,7 +6,7 @@ export default function Button({ children, onClick, to, label, variant = "primar
     const variants = {
         primary: "bg-btn-primary text-white hover:bg-btn-primary-hover shadow-[0_6px_0_#0f74ba]",
         secondary: "bg-white hover:bg-gray-50 shadow-[0_6px_0_#d1d5db] text-neutral-500 border",
-        accent: "bg-btn-secondary shadow-[0_6px_0_#cfe6fb] text-neutral-600 hover:bg-btn-secondary-hover",
+        accent: "bg-btn-secondary shadow-[0_6px_0_#cfe6fb] dark:shadow-[0_6px_0_#182c50] text-neutral-600 dark:text-white/80 hover:bg-btn-secondary-hover",
         submit: "bg-black text-white py-3 font-medium hover:bg-neutral-800 transition-colors flex items-center gap-2 justify-center flex-row-reverse"
     };
 

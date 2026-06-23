@@ -91,7 +91,7 @@ export default function Navbar() {
               <div className="flex gap-2 my-1.5">
                 <Link
                   to="/login"
-                  className="px-4 py-1 rounded-lg text-sm transition cursor-pointer bg-white border flex items-center hover:bg-gray-50 shadow-[0_5px_0_#d1d5db] text-neutral-500"
+                  className="px-4 py-1 rounded-lg text-sm transition cursor-pointer bg-btn-secondary border border-color-outline flex items-center hover:bg-btn-secondary-hover shadow-[0_6px_0_#cfe6fb] dark:shadow-[0_6px_0_#182c50] text-text-secondary"
                 >
                   Login
                 </Link>
@@ -113,7 +113,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setOpen(!open)}
-              className="md:hidden p-2 rounded-full hover:bg-blue-50 transition"
+              className="md:hidden p-2 rounded-full hover:bg-blue-ghost text-text-secondary transition"
             >
               {open ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -140,31 +140,36 @@ export default function Navbar() {
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex flex-col h-full gap-10 px-4 py-6">
-        
-          <div className="flex flex-col gap-1">
-            {navLinks.map((item) => (
-              <NavItem
-                key={item.to}
-                to={item.to}
-                mobile
-                icon={<item.icon size={18} />}
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </NavItem>
-            ))}
-          </div>
-          
-          <Link
-            to="/login"
-            onClick={() => setOpen(false)}
-            className="py-2.75 rounded-lg text-white bg-btn-primary shadow-[0_6px_0_#0f74ba] font-medium transition cursor-pointer text-center"
-          >
-            Login
-          </Link>
+        <div className="flex flex-col h-full justify-between gap-10 px-4 py-6">
 
-          <ThemeToggle /> 
+          <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-1">
+              {navLinks.map((item) => (
+                <NavItem
+                  key={item.to}
+                  to={item.to}
+                  mobile
+                  icon={<item.icon size={18} />}
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </NavItem>
+              ))}
+            </div>
+            
+            <Link
+              to="/login"
+              onClick={() => setOpen(false)}
+              className="py-2.75 rounded-lg w-full text-white bg-btn-primary shadow-[0_6px_0_#0f74ba] font-medium transition cursor-pointer text-center"
+            >
+              Login
+            </Link>
+          </div>
+
+          <div className="flex items-center justify-between pt-4 border-t border-color-outline">
+            <p className="text-text-secondary text-xs">Theme</p>
+            <ThemeToggle /> 
+          </div>
 
         </div>
       </aside>
