@@ -24,7 +24,7 @@ export default function PageLoader({ onComplete }) {
             setProgress(100);
             clearInterval(interval);
             setTimeout(() => setPhase("done"), 400);
-            setTimeout(() => onComplete?.(), 900);
+            setTimeout(() => onComplete?.(), 1100);
         } else {
             setProgress(current);
         }
@@ -38,9 +38,9 @@ export default function PageLoader({ onComplete }) {
         {phase !== "done" && (
             <motion.div
             key="loader"
-            className="fixed inset-0 z-[9999] bg-bg-primary flex flex-col items-center justify-center gap-8"
+            className="fixed inset-0 z-9999 bg-bg-primary flex flex-col items-center justify-center gap-8"
             exit={{ opacity: 0, scale: 1.02 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
             >
             {/* logo */}
             <motion.div
@@ -70,8 +70,8 @@ export default function PageLoader({ onComplete }) {
             >
                 <motion.div
                 className="absolute inset-y-0 left-0 bg-btn-primary rounded-full"
-                style={{ width: `${progress}%` }}
-                transition={{ duration: 0.1 }}
+                animate={{ width: `${progress}%` }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
                 />
             </motion.div>
 

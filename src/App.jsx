@@ -8,8 +8,8 @@ export default function App() {
   return (
     <>
       <PageLoader onComplete={() => setLoaded(true)} />
-      <div className={`transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}>
-        <AppRoutes />;
+      <div className={`transition-opacity duration-700 delay-200 ${loaded ? "opacity-100" : "opacity-0"}`}>
+        {loaded && <AppRoutes />}
       </div>
     </>
   );
