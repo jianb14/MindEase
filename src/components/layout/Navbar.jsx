@@ -140,7 +140,7 @@ export default function Navbar() {
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex flex-col h-[calc(100vh-64px)] justify-between gap-10 px-4 py-6">
+        <div className="flex flex-col h-[calc(100dvh-64px)] justify-between gap-10 px-4 py-6 overflow-y-auto">
 
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-1">

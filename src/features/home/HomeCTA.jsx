@@ -4,7 +4,7 @@ import Button from "../../components/ui/Button.jsx";
 
 export default function HomeCTA() {
     return (
-        <section className="relative w-full flex justify-center py-30 px-4 lg:px-10 bg-bg-primary">
+        <section className="relative w-full flex justify-center py-40 px-4 lg:px-10 bg-bg-primary">
             <div className="bg-bg-card z-2 py-18 px-4 md:px-30 rounded-[2rem] border">
                 <div className="w-full max-w-3xl text-center">
 
