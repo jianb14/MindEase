@@ -28,6 +28,7 @@ export default function LogoMarquee() {
                     pauseOnHover
                     scaleOnHover
                     fadeOut
+                    className="dark:invert"
                 />
 
                 <div className="flex justify-center gap-4 mt-18 flex-wrap">

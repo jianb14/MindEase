@@ -71,7 +71,7 @@ export default function Navbar() {
         `}
       >
         <div className="py-3 md:py-4 pr-2 pl-3 sm:px-4 md:px-5 lg:px-6 flex items-center justify-between">
-          <img src={logo} alt="MindEase Logo" className="h-8 sm:h-9" />
+          <img src={logo} alt="MindEase Logo" className="h-8 sm:h-9 dark:invert" />
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
@@ -91,13 +91,13 @@ export default function Navbar() {
               <div className="flex gap-2 my-1.5">
                 <Link
                   to="/login"
-                  className="px-4 py-1 rounded-lg text-sm transition cursor-pointer bg-btn-secondary border border-color-outline flex items-center hover:bg-btn-secondary-hover shadow-[0_6px_0_#cfe6fb] dark:shadow-[0_6px_0_#182c50] text-text-secondary"
+                  className="px-4 py-1 rounded-lg text-sm transition cursor-pointer bg-btn-secondary border border-color-outline flex items-center hover:bg-btn-secondary-hover shadow-[0_5px_0_#cfe6fb] dark:shadow-[0_6px_0_#182c50] text-text-secondary"
                 >
                   Login
                 </Link>
                 <Link
                   to="/register"
-                  className="px-4 py-1 rounded-lg bg-btn-primary text-white text-sm shadow-[0_5px_0_#0f74ba] hover:bg-blue-500 transition flex items-center cursor-pointer"
+                  className="px-4 py-1 rounded-lg bg-btn-primary text-white text-sm shadow-[0_6px_0_#0f74ba] hover:bg-blue-500 transition flex items-center cursor-pointer"
                 >
                   Get Started
                 </Link>
@@ -140,7 +140,7 @@ export default function Navbar() {
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex flex-col h-full justify-between gap-10 px-4 py-6">
+        <div className="flex flex-col h-screen justify-between gap-10 px-4 py-6">
 
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-1">

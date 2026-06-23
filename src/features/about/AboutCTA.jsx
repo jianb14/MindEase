@@ -16,7 +16,7 @@ export default function AboutCTA() {
                     </p>
                     <div className="flex justify-center px-8 sm:px-0 gap-4 flex-col sm:flex-row">
                         <Button label="Get Started for Free" variant="primary" icon={ArrowRight}/>
-                        <Button label="Learn More" variant="secondary"/>
+                        <Button label="Learn More" variant="accent"/>
                     </div>
                     </div>
                 </FadeIn>
