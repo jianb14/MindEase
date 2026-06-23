@@ -12,16 +12,18 @@ export default function WellnessImpact() {
     return (
         <section className="relative w-full bg-bg-primary flex justify-center py-40 px-4 lg:px-10">
         <div className="w-full max-w-5xl">
-            <FadeIn>
             <div className="text-center mb-16">
-                <p className="font-medium text-text-accent text-sm uppercase tracking-widest mb-4">
-                Wellness Impact
-                </p>
-                <h2 className="font-black text-4xl text-text-primary">
-                The Numbers Speak for Themselves
-                </h2>
+                <FadeIn delay={0}>
+                    <p className="font-medium text-text-accent text-sm uppercase tracking-widest mb-4">
+                    Wellness Impact
+                    </p>
+                </FadeIn>
+                <FadeIn delay={0.12}>
+                    <h2 className="font-black text-4xl text-text-primary">
+                    The Numbers Speak for Themselves
+                    </h2>
+                </FadeIn>
             </div>
-            </FadeIn>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {stats.map((stat, i) => (

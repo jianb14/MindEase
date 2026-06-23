@@ -18,10 +18,10 @@ export default function WhyChoose() {
                     <FadeIn delay={0}>
                         <p className="font-medium text-center text-text-accent text-sm uppercase tracking-widest mb-4">Why Choose MindEase</p>
                     </FadeIn>
-                    <FadeIn delay={0.15}>
+                    <FadeIn delay={0.12}>
                         <h1 className="font-black text-4xl text-center mb-4">Everything You Need to <span className="text-text-accent">Thrive</span></h1>
                     </FadeIn>
-                    <FadeIn delay={0.30}>
+                    <FadeIn delay={0.20}>
                         <p className="text-md sm:text-lg text-text-secondary text-center mx-0 sm:mx-10 md:mx-15 lg:mx-20">A complete wellness ecosystem designed around you, from therapy to mindfulness, community to progress tracking.</p>
                     </FadeIn>
                 </div>
@@ -31,7 +31,7 @@ export default function WhyChoose() {
                         <FadeIn key={i} delay={i * 0.1} className="z-2 relative pt-4">
                             <div className={`relative bg-bg-card border border-color-outline p-7 group rounded-2xl shadow hover:-translate-y-1.75 hover:shadow-lg transition duration-300 h-full ${card.card} hover:rotate-0`}>
                             {/* tape nasa loob ng card */}
-                            <div className={`absolute -top-3.5 ${card.tape} z-3 w-20 h-7 bg-tape rounded-sm shadow-sm`}></div>
+                            <div className={`absolute -top-3.5 ${card.tape} z-3 w-20 h-7 bg-blue-accent rounded-sm shadow-sm`}></div>
                             <div className={`h-12 w-12 flex justify-center bg-blue-ghost text-text-accent items-center ${card.bg} rounded-lg mb-5 transition-transform group-hover:bg-blue-accent duration-300 group-hover:scale-115`}>
                                 {card.icon}
                             </div>

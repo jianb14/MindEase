@@ -26,15 +26,11 @@ export default function Register() {
 
     const password = watch("password");
 
-    function onSubmit(data) {
-        console.log("register", data);
-    }
-
     const inputClass = (error) =>
     `w-full px-4 py-2.5 rounded-lg border text-sm transition duration-200 outline-offset-2 ${
         error
-        ? "border-red-400 bg-red-50 outline-none"
-        : "border-gray-200 bg-white focus:outline-2 focus:outline-[#138fe7]"
+        ? "border-red-400 dark:border-red-800 bg-[#fef2f2] dark:bg-[#201b2b] outline-none"
+        : "border-gray-200 dark:border-gray-700 bg-bg-card focus:outline-2 focus:outline-[#138fe7]"
     }`;
 
     const navigate = useNavigate();
@@ -72,7 +68,7 @@ export default function Register() {
                         const Icon = perk.icon;
                         return (
                             <div key={i} className="flex items-start gap-4">
-                                <div className="w-9 h-9 rounded-xl bg-white border border-blue/30 flex items-center justify-center shrink-0 mt-0.5">
+                                <div className="w-9 h-9 rounded-xl bg-bg-card border relative z-2 border-blue/30 flex items-center justify-center shrink-0 mt-0.5">
                                     <Icon size={17} className="text-blue" />
                                 </div>
                                 <div>
@@ -97,7 +93,7 @@ export default function Register() {
                 <div className="w-full max-w-md">
 
                 {/* card */}
-                <div className="bg-white rounded-2xl z-2 relative shadow-lg border p-8">
+                <div className="bg-bg-card rounded-2xl z-2 relative shadow-lg border p-8">
                     <div className={`absolute -top-3.5 left-1/2 -translate-x-1/2 z-3 w-25 h-7 bg-blue-accent rounded-sm shadow-sm`}></div>
 
                     <div className="mb-6">

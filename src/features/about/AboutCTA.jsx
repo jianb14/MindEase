@@ -12,12 +12,12 @@ export default function AboutCTA() {
                             Ready to Start Your <span className="text-blue">Wellness Journey?</span>
                         </h2>
                     </FadeIn>
-                    <FadeIn delay={0.15}>
+                    <FadeIn delay={0.10}>
                         <p className="text-text-secondary text-md leading-relaxed mb-10 lg:mx-10">
                             Join thousands of members who have already taken the first step toward better mental health. Your journey starts with a single click.
                         </p>
                     </FadeIn>
-                    <FadeIn delay={0.30}>
+                    <FadeIn delay={0.20}>
                         <div className="flex justify-center px-8 sm:px-0 gap-4 flex-col sm:flex-row">
                             <Button label="Get Started for Free" variant="primary" icon={ArrowRight}/>
                             <Button label="Learn More" variant="accent"/>

@@ -171,7 +171,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center justify-between pt-4 border-t">
-            <p className="text-text-secondary text-xs">Theme</p>
+            <p className="text-text-secondary text-sm ml-2">Theme</p>
             <ThemeToggle /> 
           </div>
 

@@ -14,7 +14,6 @@ export default function Hero() {
     return (
         <section className="relative overflow-hidden bg-bg-primary min-h-100dvh w-full flex items-center justify-center px-4 sm:px-10 md:px-20 lg:px-60 py-20">
 
-            {/* floating stat cards */}
             {stats.map((stat, i) => {
                 const Icon = stat.icon;
                 return (
@@ -64,7 +63,7 @@ export default function Hero() {
                     </p>
                 </FadeIn>
 
-                <FadeIn delay={0.45}>
+                <FadeIn delay={0.40}>
                     <div className="flex justify-center px-10 md:px-0 gap-2.5 flex-col sm:flex-row">
                         <Button label="Start your Journey" to="/therapists" className="flex justify-center mb-2 sm:mb-0" />
                         <div className="flex items-center justify-center gap-2 px-4 pt-3 pb-3.25 bg-btn-secondary shadow-[0_6px_0_#cfe6fb] dark:shadow-[0_6px_0_#182c50] rounded-lg hover:bg-btn-secondary-hover cursor-pointer">

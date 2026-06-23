@@ -14,18 +14,18 @@ export default function HomeCTA() {
                             No commitment. Cancel anytime.
                         </div>
                     </FadeIn>
-                    <FadeIn delay={0.15}>
+                    <FadeIn delay={0.10}>
                         <h2 className="font-black text-4xl text-text-primary mb-6 leading-tight lg:mx-30">
                             Take the First Step Toward{" "}
                             <span className="text-text-accent">Better Mental Health</span> Today
                         </h2>
                     </FadeIn>
-                    <FadeIn delay={0.30}>
+                    <FadeIn delay={0.20}>
                         <p className="text-text-secondary text-md leading-relaxed mb-10">
                             Join thousands of people who are improving their emotional well-being with expert support and personalized care.
                         </p>
                     </FadeIn>
-                    <FadeIn delay={0.45}>
+                    <FadeIn delay={0.30}>
                         <div className="flex justify-center px-8 sm:px-0 gap-4 flex-col sm:flex-row mb-8">
                             <Button label="Get Started Now" to="/register" icon={ArrowRight} />
                             <Button label="Browse Therapists" to="/therapists" variant="accent" />
