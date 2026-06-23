@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "/src/assets/mindease-logo.png";
+import logoLight from "/src/assets/mindease-logo.png";
+import logoDark from "/src/assets/dark-mindease-logo.png";
+import { useTheme } from "../../context/ThemeContext.jsx";
 
 export default function PageLoader({ onComplete }) {
     const [phase, setPhase] = useState("logo"); // "logo" | "bar" | "done"
     const [progress, setProgress] = useState(0);
+    const { theme } = useTheme();
+    const isDark = theme === "dark";
 
     useEffect(() => {
         // phase 1 — logo appears, then start bar
@@ -49,7 +53,7 @@ export default function PageLoader({ onComplete }) {
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className="flex flex-col items-center gap-4"
             >
-                <img src={logo} alt="MindEase" className="h-12 dark:invert" />
+                <img src={isDark ? logoDark : logoLight} alt="MindEase" className="h-12" />
                 <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

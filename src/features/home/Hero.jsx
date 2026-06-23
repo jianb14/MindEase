@@ -12,7 +12,7 @@ const stats = [
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden bg-bg-primary min-h-[65vh] sm:h-screen w-full flex sm:items-start justify-center px-4 sm:px-10 md:px-20 lg:px-60 pt-16 sm:pt-20">
+        <section className="relative overflow-hidden bg-bg-primary min-h-100dvh w-full flex items-center justify-center px-4 sm:px-10 md:px-20 lg:px-60 py-20">
 
             {/* floating stat cards */}
             {stats.map((stat, i) => {

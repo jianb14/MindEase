@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import NavItem from "../ui/NavItem.jsx";
-import logo from "/src/assets/mindease-logo.png";
+import logoLight from "/src/assets/mindease-logo.png";
+import logoDark from "/src/assets/dark-mindease-logo.png";
+import { useTheme } from "../../context/ThemeContext.jsx";
 import ThemeToggle from "../ui/ThemeToggle.jsx";
 import { 
   Menu,
@@ -18,6 +20,8 @@ import {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
 
   const navLinks = [
     { to: "/", label: "Home", icon: House },
@@ -71,7 +75,7 @@ export default function Navbar() {
         `}
       >
         <div className="py-3 md:py-4 pr-2 pl-3 sm:px-4 md:px-5 lg:px-6 flex items-center justify-between">
-          <img src={logo} alt="MindEase Logo" className="h-8 sm:h-9 dark:invert" />
+          <img src={isDark ? logoDark : logoLight} alt="MindEase Logo" className="h-8 sm:h-9" />
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
@@ -126,7 +130,7 @@ export default function Navbar() {
       <div
         onClick={() => setOpen(false)}
         className={`
-          fixed top-16 left-0 w-full h-[calc(100vh-64px)] z-40 transition-all duration-300
+          fixed top-16 left-0 w-full h-[calc(100dvh-64px)] z-40 transition-all duration-300
           ${open ? "opacity-100 backdrop-blur-xs bg-black/5" : "opacity-0 pointer-events-none"}
         `}
       />
@@ -134,7 +138,7 @@ export default function Navbar() {
       {/* Sidebar */}
       <aside
         className={`
-          fixed top-16.50 left-0 w-72 h-[calc(100vh-64px)]
+          fixed top-16.50 left-0 w-72 h-[calc(100dvh-64px)]
           bg-bg-primary shadow-lg z-50
           transition-transform duration-300
           ${open ? "translate-x-0" : "-translate-x-full"}
