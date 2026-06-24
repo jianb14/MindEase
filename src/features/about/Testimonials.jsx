@@ -71,10 +71,10 @@ export default function Testimonials() {
                 <div className="relative">
 
                     {/* Left Fade */}
-<div className="absolute left-0 top-0 z-10 h-full w-4 md:w-8 pointer-events-none bg-gradient-to-r from-bg-primary to-transparent" />
+<div className="absolute left-0 top-0 z-10 h-full w-4 md:w-8 pointer-events-none bg-linear-to-r from-bg-primary to-transparent" />
 
 {/* Right Fade */}
-<div className="absolute right-0 top-0 z-10 h-full w-4 md:w-8 pointer-events-none bg-gradient-to-l from-bg-primary to-transparent" />
+<div className="absolute right-0 top-0 z-10 h-full w-4 md:w-8 pointer-events-none bg-linear-to-l from-bg-primary to-transparent" />
 
                     <Swiper
                         modules={[Autoplay, Pagination]}
@@ -119,16 +119,16 @@ export default function Testimonials() {
                                         </div>
 
                                         {/* Name */}
-                                        <p className="text-text-primary text-md font-semibold text-center mb-[6px]">
+                                        <p className="text-text-primary text-md font-semibold text-center mb-1.5">
                                             {item.name}
                                         </p>
 
-                                        <p className="text-xs font-light text-text-secondary tracking-[0.6px] text-center mb-[10px]">
+                                        <p className="text-xs font-light text-text-secondary tracking-[0.6px] text-center mb-2.5">
                                             {item.role}
                                         </p>
 
                                         {/* Stars */}
-                                        <div className="flex gap-[3px] justify-center mb-3">
+                                        <div className="flex gap-0.75 justify-center mb-3">
                                             {[...Array(5)].map((_, i) => (
                                                 <span key={i} className="text-orange text-[13px] leading-none">
                                                     ★
@@ -137,7 +137,7 @@ export default function Testimonials() {
                                         </div>
 
                                         {/* Divider */}
-                                        <div className="w-5 h-px bg-white/[0.08] mb-3" />
+                                        <div className="w-5 h-px bg-white/8 mb-3" />
 
                                         {/* Quote */}
                                         <p className="text-text-secondary text-sm font-light italic leading-[1.85] text-center">
