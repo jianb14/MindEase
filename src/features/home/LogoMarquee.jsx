@@ -31,10 +31,10 @@ export default function LogoMarquee() {
                     fadeOutColor="var(--color-bg-primary)"
                     renderItem={(item) => (
                         <img
-                        src={item.src}
-                        alt={item.alt}
-                        className="h-(--logoloop-logoHeight) w-auto object-contain dark:invert dark:opacity-80"
-                        draggable={false}
+                            src={item.src}
+                            alt={item.alt}
+                            className="h-(--logoloop-logoHeight) w-auto object-contain dark:invert dark:opacity-80 transition-transform duration-300 ease-in-out group-hover/item:scale-120"
+                            draggable={false}
                         />
                     )}
                 />

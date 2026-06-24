@@ -29,10 +29,10 @@ export default function WhyChoose() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 grid-rows-2 gap-6 sm:mx-6 md:mx-10 mx-0">
                     {cards.map((card, i) => (
                         <FadeIn key={i} delay={i * 0.1} className="z-2 relative pt-4">
-                            <div className={`relative bg-bg-card border border-color-outline p-7 group rounded-2xl shadow hover:-translate-y-1.75 hover:shadow-lg transition duration-300 h-full ${card.card} hover:rotate-0`}>
+                            <div className={`relative bg-bg-card border border-color-outline p-7 group rounded-2xl shadow hover:-translate-y-1.75 hover:shadow-lg transition-all duration-300 h-full ${card.card} hover:rotate-0 will-change-transform`}>
                             {/* tape nasa loob ng card */}
                             <div className={`absolute -top-3.5 ${card.tape} z-3 w-20 h-7 bg-blue-accent rounded-sm shadow-sm`}></div>
-                            <div className={`h-12 w-12 flex justify-center bg-blue-ghost text-text-accent items-center ${card.bg} rounded-lg mb-5 transition-transform group-hover:bg-blue-accent duration-300 group-hover:scale-115`}>
+                            <div className={`h-12 w-12 flex justify-center bg-blue-ghost text-text-accent items-center ${card.bg} rounded-lg mb-5 transition-all group-hover:bg-blue-accent duration-300 group-hover:scale-115`}>
                                 {card.icon}
                             </div>
                             <h4 className="font-bold mb-2">{card.title}</h4>

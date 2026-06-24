@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 export default function FadeIn({
     children,
     delay = 0,
-    duration = 0.8,
+    duration = 0.5,
     y = 30,
     className = "",
 }) {

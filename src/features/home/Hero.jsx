@@ -6,8 +6,8 @@ import FadeIn from "../../components/ui/FadeIn.jsx";
 const stats = [
     { icon: Star,           value: "4.9",     label: "Satisfaction Rating",  pos: "top-18 left-6 lg:left-20",      anim: "floatA" },
     { icon: Users,          value: "25,000+", label: "Active Members",       pos: "top-22 right-6 lg:right-20",    anim: "floatB" },
-    { icon: Stethoscope,    value: "500+",    label: "Licensed Therapists",  pos: "bottom-32 left-6 lg:left-24",   anim: "floatC" },
-    { icon: HeartHandshake, value: "24/7",    label: "Wellness Support",     pos: "bottom-32 right-6 lg:right-26", anim: "floatD" },
+    { icon: Stethoscope,    value: "500+",    label: "Licensed Therapists",  pos: "bottom-10 left-6 lg:left-24",   anim: "floatC" },
+    { icon: HeartHandshake, value: "24/7",    label: "Wellness Support",     pos: "bottom-14 right-6 lg:right-26", anim: "floatD" },
 ];
 
 export default function Hero() {

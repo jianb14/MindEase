@@ -69,7 +69,7 @@ export default function Navbar() {
           transition-all duration-500
           ${
             scrolled
-              ? "bg-white/60 dark:bg-bg-primary/60 dark:border-b-white/10  backdrop-blur-xl border border-b-white/30 shadow-xs"
+              ? "bg-white/60 dark:bg-bg-primary/60 dark:border-b-white/10 backdrop-blur-xl border border-b-white/30 shadow-xs"
               : "bg-bg-primary dark:bg-bg-primary dark:border-bg-primary backdrop-blur-lg border border-b-white/10"
           }
         `}
