@@ -59,6 +59,41 @@
   --color-text-secondary: #9aa7b5;
 }
 
+.swiper-pagination {
+    margin-top: 40px;
+    position: relative !important;
+}
+
+.testimonial-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: #94a3b8;
+    display: inline-block;
+    margin: 0 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.testimonial-bullet-active {
+    width: 45px;
+    background: #138fe7;
+}
+
+.testimonial-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: #94a3b8;
+    opacity: 1;
+    transition: all 0.35s ease;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active {
+    width: 42px;
+    background: #138fe7;
+}
+
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: 'Inter Variable', sans-serif;
