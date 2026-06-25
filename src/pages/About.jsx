@@ -9,9 +9,9 @@ import OurStory from "../features/about/OurStory.jsx";
 export default function About() {
     return (
 
-        <div className="relative min-h-screen">
+        <div className="relative min-h-screen pointer-events-none">
             <div className="absolute inset-0 h-full w-full">
-                <DotField dotSpacing={16}/>
+                <DotField interactive={false} dotSpacing={16}/>
             </div>
 
             <AboutHero />

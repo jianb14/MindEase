@@ -8,7 +8,7 @@ import HomeCTA from "../features/home/HomeCTA.jsx"
 
 export default function Home() {
     return (
-        <div className="relative min-h-screen">
+        <div className="relative min-h-screen pointer-events-none">
             <div className="absolute inset-0 h-full w-full">
                 <DotField dotSpacing={16}/>
             </div>

@@ -3,6 +3,7 @@ import { useEffect, useRef, memo } from 'react';
 const TWO_PI = Math.PI * 2;
 
 const DotField = memo(({
+  interactive = true,
   dotRadius = 1.5,
   dotSpacing = 14,
   cursorRadius = 500,
@@ -206,7 +207,9 @@ const DotField = memo(({
 
     doResize();
     window.addEventListener('resize', resize);
-    window.addEventListener('mousemove', onMouseMove, { passive: true });
+    if (interactive) {
+      window.addEventListener('mousemove', onMouseMove, { passive: true });
+    }
     rafRef.current = requestAnimationFrame(tick);
 
     rebuildRef.current = () => {
@@ -219,7 +222,9 @@ const DotField = memo(({
       clearInterval(speedInterval);
       clearTimeout(resizeTimer);
       window.removeEventListener('resize', resize);
-      window.removeEventListener('mousemove', onMouseMove);
+      if (interactive) {
+        window.removeEventListener('mousemove', onMouseMove);
+      }
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
