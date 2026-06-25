@@ -49,7 +49,7 @@ export default function Footer() {
     const isDark = theme === "dark";
 
     return (
-        <footer className="w-full bg-bg-primary">
+        <footer className="relative w-full bg-bg-primary">
         {/* Main Footer */}
         <div className="relative overflow-hidden rounded-t-[40px] border-t dark:border-white/10 border-black/10 bg-bg-card px-8 md:px-14 lg:px-18 pt-16 pb-12">
             
@@ -61,10 +61,10 @@ export default function Footer() {
                 <img
                 src={isDark ? logoDark : logoLight}
                 alt="MindEase"
-                className="h-10 w-fit mb-5"
+                className="h-10 w-fit mb-5 -ml-1.25"
                 />
 
-                <div className="ml-1.25">
+                <div>
                     <p className="text-text-secondary text-sm leading-relaxed mb-6">
                         Making professional mental health support accessible,
                         affordable, and stigma-free for everyone.

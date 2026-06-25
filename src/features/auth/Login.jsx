@@ -5,6 +5,8 @@ import { Eye, EyeOff, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import DotField from "../../components/ui/DotField.jsx";
 import FadeIn from "../../components/ui/FadeIn.jsx"; 
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebook } from "react-icons/fa";
 
 export default function Login() {
     const [showPassword, setShowPassword] = useState(false);
@@ -33,7 +35,7 @@ export default function Login() {
     }
 
     return (
-        <div className="h-[85vh] flex items-center justify-center bg-bg-primary px-4">
+        <section className="relative h-screen flex items-center justify-center bg-bg-primary px-4">
             
             <div className="absolute inset-0 h-full w-full">
                 <DotField dotSpacing={16}/>
@@ -133,6 +135,39 @@ export default function Login() {
 
                     </div>
 
+                    {/* Divider */}
+                    <div className="flex items-center gap-3 mt-6 mb-5">
+                        <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700"></div>
+                        <span className="text-xs text-text-secondary">or continue with</span>
+                        <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700"></div>
+                    </div>
+
+                    {/* Social Login */}
+                    <div className="grid grid-cols-2 gap-3">
+                        <button
+                            type="button"
+                            className="flex items-center justify-center gap-2 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-bg-card hover:bg-gray-50 dark:hover:bg-[#1d243d] transition"
+                        >
+                            <FcGoogle size={18} />
+                            <span className="text-sm font-medium text-text-primary">
+                                Google
+                            </span>
+                        </button>
+
+                        <button
+                            type="button"
+                            className="flex items-center justify-center gap-2 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-bg-card hover:bg-gray-50 dark:hover:bg-[#1d243d] transition"
+                        >
+                            <FaFacebook
+                                size={18}
+                                className="text-[#1877F2]"
+                            />
+                            <span className="text-sm font-medium text-text-primary">
+                                Facebook
+                            </span>
+                        </button>
+                    </div>
+
                     <p className="text-center text-xs text-text-secondary mt-6">
                         Don't have an account?{" "}
                         <Link to="/register" className="text-text-accent font-semibold hover:underline">
@@ -142,6 +177,6 @@ export default function Login() {
                 </div>
             </div>
             </FadeIn>
-        </div>
+        </section>
     );
 }
