@@ -4,42 +4,42 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import team1 from "/src/assets/team-1.png";
-import team2 from "/src/assets/team-2.png";
-import team3 from "/src/assets/team-3.png";
-import team4 from "/src/assets/team-4.png";
-import team5 from "/src/assets/team-5.png";
+import review1 from "/src/assets/review-1.jpg";
+import review2 from "/src/assets/review-2.jpg";
+import review3 from "/src/assets/review-3.jpg";
+import review4 from "/src/assets/review-4.jpg";
+import review5 from "/src/assets/review-5.jpg";
 
 const testimonials = [
     {
-        name: "Sarah Johnson",
-        role: "Clinical Psychologist",
-        image: team1,
-        quote: "MindEase provides a safe and supportive environment where individuals can access professional mental health guidance with confidence.",
+        name: "Sophia Martinez",
+        role: "University Student",
+        image: review1,
+        quote: "MindEase helped me manage academic stress and build healthier habits. The resources were easy to access and made a real difference in my daily life.",
     },
     {
-        name: "Michael Reyes",
-        role: "Licensed Therapist",
-        image: team2,
-        quote: "The platform bridges the gap between people seeking help and professionals ready to support them on their journey.",
+        name: "Ethan Brooks",
+        role: "Marketing Manager",
+        image: review2,
+        quote: "Balancing work and personal life became easier with MindEase. The platform gave me practical tools that improved both my productivity and well-being.",
     },
     {
-        name: "Emily Cruz",
-        role: "Mental Health Counselor",
-        image: team3,
-        quote: "Mental wellness should be accessible to everyone, and MindEase is making that vision a reality.",
+        name: "Mia Chen",
+        role: "Remote Designer",
+        image: review3,
+        quote: "Working remotely often felt isolating, but MindEase provided support and guidance that helped me stay connected, focused, and mentally healthy.",
     },
     {
-        name: "James Tan",
-        role: "Psychiatrist",
-        image: team4,
-        quote: "MindEase combines accessibility, empathy, and technology to create a truly meaningful experience.",
+        name: "Daniel Carter",
+        role: "Parent & Entrepreneur",
+        image: review4,
+        quote: "As a parent and business owner, finding time for myself was difficult. MindEase reminded me that mental wellness deserves the same attention as physical health.",
     },
     {
-        name: "Olivia Santos",
-        role: "Wellness Specialist",
-        image: team5,
-        quote: "A thoughtful platform that empowers people to prioritize their mental well-being every day.",
+        name: "Ava Thompson",
+        role: "Healthcare Professional",
+        image: review5,
+        quote: "MindEase offers a welcoming and supportive experience. It helped me reflect, recharge, and develop healthier ways to manage everyday challenges.",
     },
 ];
 
@@ -48,21 +48,21 @@ export default function Testimonials() {
         <section className="py-40 px-4 md:px-16 lg:px-32 bg-bg-primary">
 
             {/* Header */}
-            <div className="max-w-2xl mx-auto text-center mb-24">
+            <div className="max-w-2xl mx-auto text-center mb-20">
                 <FadeIn>
                     <p className="text-xs uppercase tracking-[4px] text-text-secondary mb-4">
-                        Testimonials
+                        Success Stories
                     </p>
                 </FadeIn>
                 <FadeIn delay={0.1}>
                     <h2 className="text-4xl md:text-5xl font-black mb-4">
-                        What People Say About{" "}
-                        <span className="text-text-accent">MindEase</span>
+                        Real Stories,{" "}
+                        <span className="text-text-accent">Real Growth</span>
                     </h2>
                 </FadeIn>
                 <FadeIn delay={0.2}>
                     <p className="text-text-secondary text-lg">
-                        Hear from professionals who believe in making mental wellness accessible.
+                        Discover how MindEase helps people navigate challenges, build resilience, and prioritize their mental well-being.
                     </p>
                 </FadeIn>
             </div>
@@ -70,11 +70,8 @@ export default function Testimonials() {
             <FadeIn delay={0.3}>
                 <div className="relative">
 
-                    {/* Left Fade */}
-<div className="absolute left-0 top-0 z-10 h-full w-4 md:w-8 pointer-events-none bg-linear-to-r from-bg-primary to-transparent" />
-
-{/* Right Fade */}
-<div className="absolute right-0 top-0 z-10 h-full w-4 md:w-8 pointer-events-none bg-linear-to-l from-bg-primary to-transparent" />
+                <div className="absolute left-0 top-0 z-10 h-full w-4 md:w-8 pointer-events-none bg-linear-to-r from-bg-primary to-transparent" />
+                <div className="absolute right-0 top-0 z-10 h-full w-4 md:w-8 pointer-events-none bg-linear-to-l from-bg-primary to-transparent" />
 
                     <Swiper
                         modules={[Autoplay, Pagination]}
@@ -130,7 +127,7 @@ export default function Testimonials() {
                                         {/* Stars */}
                                         <div className="flex gap-0.75 justify-center mb-3">
                                             {[...Array(5)].map((_, i) => (
-                                                <span key={i} className="text-orange text-[13px] leading-none">
+                                                <span key={i} className="text-amber-400 text-[13px] leading-none">
                                                     ★
                                                 </span>
                                             ))}
@@ -140,7 +137,7 @@ export default function Testimonials() {
                                         <div className="w-5 h-px bg-white/8 mb-3" />
 
                                         {/* Quote */}
-                                        <p className="text-text-secondary text-sm font-light italic leading-[1.85] text-center">
+                                        <p className="text-text-secondary text-sm mx-8 font-light italic leading-[1.85] text-center">
                                             {item.quote}
                                         </p>
                                     </div>
