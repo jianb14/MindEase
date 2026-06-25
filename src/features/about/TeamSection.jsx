@@ -48,7 +48,7 @@ export default function TeamSection() {
                 </FadeIn>
 
                 <FadeIn delay={0.1}>
-                    <h2 className="text-4xl md:text-5xl font-black mb-5">
+                    <h2 className="text-4xl font-black mb-5">
                         The People Behind{" "}
                         <span className="text-blue">
                             MindEase

@@ -3,6 +3,7 @@ import Timeline from "../features/about/Timeline.jsx"
 import AboutCTA from "../features/about/AboutCTA.jsx" 
 import TeamSection from "../features/about/TeamSection.jsx" 
 import Testimonials from "../features/about/Testimonials.jsx";
+import AboutHero from "../features/about/AboutHero.jsx";
 
 export default function About() {
     return (
@@ -12,6 +13,7 @@ export default function About() {
                 <DotField dotSpacing={16}/>
             </div>
 
+            <AboutHero />
             <Timeline />
             <TeamSection />
             <Testimonials />

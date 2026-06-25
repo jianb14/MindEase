@@ -55,7 +55,7 @@ export default function Testimonials() {
                     </p>
                 </FadeIn>
                 <FadeIn delay={0.1}>
-                    <h2 className="text-4xl md:text-5xl font-black mb-4">
+                    <h2 className="text-4xl font-black mb-4">
                         Real Stories,{" "}
                         <span className="text-text-accent">Real Growth</span>
                     </h2>

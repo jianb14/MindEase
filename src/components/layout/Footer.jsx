@@ -11,10 +11,10 @@ import {
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const socials = [
-    { icon: FaFacebookF, href: "#" },
-    { icon: FaInstagram, href: "#" },
-    { icon: FaXTwitter, href: "#" },
-    { icon: FaYoutube, href: "#" },
+    { icon: FaFacebookF },
+    { icon: FaInstagram },
+    { icon: FaXTwitter },
+    { icon: FaYoutube },
 ];
 
 const companyLinks = [
@@ -28,8 +28,8 @@ const companyLinks = [
 const supportLinks = [
     { label: "Resources", to: "/resources" },
     { label: "Help Center", to: "/contact" },
-    { label: "Privacy Policy", to: "/privacy-policy" },
-    { label: "Terms & Conditions", to: "/terms" },
+    { label: "Privacy Policy" },
+    { label: "Terms & Conditions" },
 ];
 
 const contactInfo = [
@@ -180,7 +180,7 @@ export default function Footer() {
                 return (
                     <div
                     key={index}
-                    className="rounded-full text-blue py-1 px-3 border bg-blue-accent border-blue/20 text-xs"
+                    className="rounded-full text-blue py-1 px-3 border bg-blue-ghost border-blue/10 text-xs"
                     >
                     <span>{badge.text}</span>
                     </div>
