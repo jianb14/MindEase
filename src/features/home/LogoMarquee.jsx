@@ -16,7 +16,7 @@ const logos = [
 
 export default function LogoMarquee() {
     return (
-        <section className="relative bg-bg-primary w-full">
+        <section className="relative bg-transparent w-full">
             <div className="py-35 sm:py-40 sm:px-10 md:px-30 lg:px-50">
                 <h4 className="text-blue mb-14 text-center font-medium mx-4">Trusted by Individuals, Families, and Organizations</h4>
                 

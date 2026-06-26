@@ -148,7 +148,7 @@ const timelineData = [
 
     export default function Timeline() {
     return (
-        <section className="relative min-h-screen w-full bg-bg-primary pb-40 pt-30 px-4 md:px-16 lg:px-32">
+        <section className="relative min-h-screen w-full bg-transparent pb-40 pt-30 px-4 md:px-16 lg:px-32">
             {/* Header */}
             <div className="mx-0 lg:mx-50 mb-25">
                 <FadeIn delay={0}>

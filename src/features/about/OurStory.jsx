@@ -9,7 +9,7 @@ const items = [
 
 export default function OurStory() {
     return (
-        <section className="w-full bg-emerald-50 py-20 px-6">
+        <section className="w-full bg-transparent py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
             {/* LEFT: one L-shaped image + a separate card in the cut corner, with a gap */}
@@ -38,35 +38,43 @@ export default function OurStory() {
 
             {/* RIGHT: label, title, subtitle, checklist */}
             <div className="max-w-xl">
-            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-amber-700 border-b-2 border-amber-200 pb-1 mb-5">
-                Our story
-            </span>
+    <span className="inline-block text-xs font-semibold tracking-widest uppercase text-text-accent border-b-2 border-btn-primary/20 pb-1 mb-5">
+        Our Story
+    </span>
 
-            <h2 className="font-serif text-3xl md:text-4xl leading-tight text-emerald-950 mb-6">
-                It started at 2 a.m., with a search bar and{" "}
-                <em className="italic font-normal text-amber-700">nothing useful</em> in it.
-            </h2>
+    <h2 className="font-serif text-3xl md:text-4xl leading-tight text-text-primary mb-6">
+        Built from a Simple Idea:
+        <span className="text-btn-primary"> Mental Health Support Should Be Easier to Access.</span>
+    </h2>
 
-            <p className="text-base leading-relaxed text-emerald-800 mb-9">
-                MindEase began on a sleepless night, scrolling through apps that
-                didn't get it — generic affirmations, no real guidance, nothing
-                built for the actual 2 a.m. spiral. So we built the thing we
-                wished existed: real tools, real therapists, and a plan that
-                adjusts to how you're actually doing, not how an app assumes you
-                should be.
-            </p>
+    <p className="text-base leading-relaxed text-text-secondary mb-9">
+        MindEase was created with one goal in mind: to make mental wellness
+        support more accessible, approachable, and personalized. We saw how
+        difficult it can be for individuals to find reliable resources,
+        professional guidance, and tools that truly fit their needs. That's why
+        we built a platform designed to connect people with meaningful support
+        whenever and wherever they need it.
+    </p>
 
-            <ul className="space-y-5">
-                {items.map((text, i) => (
-                <li key={i} className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center mt-0.5">
-                    <Check className="w-3.5 h-3.5 text-amber-700" strokeWidth={2.5} />
-                    </span>
-                    <span className="text-sm text-emerald-950 leading-relaxed">{text}</span>
-                </li>
-                ))}
-            </ul>
-            </div>
+    <ul className="space-y-5">
+        {[
+            "Accessible mental wellness tools for everyday support",
+            "Personalized guidance tailored to individual needs",
+            "Secure connections with licensed mental health professionals",
+            "A supportive environment focused on long-term well-being",
+        ].map((text, i) => (
+            <li key={i} className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-btn-primary/15 flex items-center justify-center mt-0.5">
+                    <Check className="w-3.5 h-3.5 text-btn-primary" strokeWidth={2.5} />
+                </span>
+
+                <span className="text-sm text-text-primary leading-relaxed">
+                    {text}
+                </span>
+            </li>
+        ))}
+    </ul>
+</div>
 
         </div>
         </section>

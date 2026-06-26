@@ -38,7 +38,7 @@ export default function TeamSection() {
     const [active, setActive] = useState(null);
 
     return (
-        <section className="relative pb-40 px-4 md:px-16 lg:px-32 bg-bg-primary overflow-hidden">
+        <section className="relative pb-40 px-4 md:px-16 lg:px-32 bg-transparent overflow-hidden">
             {/* Header */}
             <div className="max-w-3xl mx-auto text-center mb-20">
                 <FadeIn>

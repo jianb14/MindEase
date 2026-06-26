@@ -12,7 +12,7 @@ const stats = [
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden bg-bg-primary min-h-100dvh w-full flex items-center justify-center px-4 sm:px-10 md:px-20 lg:px-60 py-20">
+        <section className="relative overflow-hidden bg-transparent min-h-100dvh w-full flex items-center justify-center px-4 sm:px-10 md:px-20 lg:px-60 py-20">
 
             {stats.map((stat, i) => {
                 const Icon = stat.icon;

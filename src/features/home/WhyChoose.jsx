@@ -12,7 +12,7 @@ const cards = [
 
 export default function WhyChoose() {
     return (
-        <section className="relative bg-bg-primary w-full flex justify-center py-40 px-4 lg:px-10">
+        <section className="relative bg-transparent w-full flex justify-center py-40 px-4 lg:px-10">
             <div>
                 <div className="mx-0 lg:mx-50 mb-15">
                     <FadeIn delay={0}>

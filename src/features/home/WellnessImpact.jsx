@@ -10,7 +10,7 @@ const stats = [
 
 export default function WellnessImpact() {
     return (
-        <section className="relative w-full bg-bg-primary flex justify-center py-40 px-4 lg:px-10">
+        <section className="relative w-full bg-transparent flex justify-center py-40 px-4 lg:px-10">
         <div className="w-full max-w-5xl">
             <div className="text-center mb-16">
                 <FadeIn delay={0}>
