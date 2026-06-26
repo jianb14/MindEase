@@ -19,7 +19,7 @@ export default function WhyChoose() {
                         <p className="font-medium text-center text-text-accent text-sm uppercase tracking-widest mb-4">Why Choose MindEase</p>
                     </FadeIn>
                     <FadeIn delay={0.12}>
-                        <h1 className="font-black text-4xl text-center mb-4">Everything You Need to <span className="text-text-accent">Thrive</span></h1>
+                        <h1 className="font-black text-text-primary text-4xl text-center mb-4">Everything You Need to <span className="text-text-accent">Thrive</span></h1>
                     </FadeIn>
                     <FadeIn delay={0.20}>
                         <p className="text-md sm:text-lg text-text-secondary text-center mx-0 sm:mx-10 md:mx-15 lg:mx-20">A complete wellness ecosystem designed around you, from therapy to mindfulness, community to progress tracking.</p>
@@ -35,7 +35,7 @@ export default function WhyChoose() {
                             <div className={`h-12 w-12 flex justify-center bg-blue-ghost text-text-accent items-center ${card.bg} rounded-lg mb-5 transition-all group-hover:bg-blue-accent duration-300 group-hover:scale-115`}>
                                 {card.icon}
                             </div>
-                            <h4 className="font-bold mb-2">{card.title}</h4>
+                            <h4 className="font-bold mb-2 text-text-primary">{card.title}</h4>
                             <p className="text-text-secondary">{card.desc}</p>
                             </div>
                         </FadeIn>

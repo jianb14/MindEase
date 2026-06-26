@@ -39,7 +39,7 @@ export default function HowItWorks() {
               </p>
             </FadeIn>
             <FadeIn delay={0.20}>
-            <h2 className="font-black text-4xl">
+            <h2 className="font-black text-text-primary text-4xl">
               Start Feeling Better in{" "}
               <span className="text-text-accent">4 Simple Steps</span>
             </h2>
