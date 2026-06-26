@@ -110,6 +110,8 @@ export default function Testimonials() {
                                                 <img
                                                     src={item.image}
                                                     alt={item.name}
+                                                    loading="lazy"
+                                                    decoding="async"
                                                     className="w-full h-full object-cover"
                                                 />
                                             </div>

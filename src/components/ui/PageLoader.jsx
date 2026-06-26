@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import logoLight from "/src/assets/mindease-logo.png";
 import logoDark from "/src/assets/dark-mindease-logo.png";
-import { useTheme } from "../../context/ThemeContext.jsx";
+import { useTheme } from "../../context/useTheme.js";
 
 export default function PageLoader({ onComplete }) {
     const [phase, setPhase] = useState("logo"); // "logo" | "bar" | "done"

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavItem from "../ui/NavItem.jsx";
 import logoLight from "/src/assets/mindease-logo.png";
 import logoDark from "/src/assets/dark-mindease-logo.png";
-import { useTheme } from "../../context/ThemeContext.jsx";
+import { useTheme } from "../../context/useTheme.js";
 import ThemeToggle from "../ui/ThemeToggle.jsx";
 import { 
   Menu,

@@ -1,12 +1,5 @@
 import { Check } from "lucide-react";
 
-const items = [
-    "Matched with a licensed therapist in under 48 hours",
-    "Daily check-ins that adjust to your actual mood, not a script",
-    "Every exercise reviewed by a licensed clinical psychologist",
-    "Someone to talk to at 2 a.m., not just 9-to-5",
-];
-
 export default function OurStory() {
     return (
         <section className="w-full bg-transparent py-20 px-6">
@@ -17,7 +10,7 @@ export default function OurStory() {
             className="relative w-full max-w-md mx-auto md:mx-0"
             style={{ aspectRatio: "4 / 5" }}
             >
-            {/* the image — single shape, fills the whole box except the bottom-right notch */}
+            {/* the image - single shape, fills the whole box except the bottom-right notch */}
             <div className="absolute inset-0 rounded-3xl overflow-hidden bg-white">
                 <div className="absolute top-10 left-10 w-2 h-2 rounded-full bg-white/70" />
                 <div className="absolute top-16 left-24 w-1 h-1 rounded-full bg-white/50" />

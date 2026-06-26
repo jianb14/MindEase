@@ -86,9 +86,11 @@ export default function TeamSection() {
                         <img
                             src={member.image}
                             alt={member.name}
+                            loading="lazy"
+                            decoding="async"
                             className={`
                                 absolute inset-0 h-full w-full object-cover
-                                transition-all duration-700
+                                transition-transform duration-700
                                 ${active === index ? "scale-115" : "scale-100"}
                             `}
                         />
@@ -149,6 +151,8 @@ export default function TeamSection() {
                         <img
                             src={member.image}
                             alt={member.name}
+                            loading="lazy"
+                            decoding="async"
                             className="absolute inset-0 h-full w-full object-cover"
                         />
 
