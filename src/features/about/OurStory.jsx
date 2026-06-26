@@ -1,73 +1,71 @@
 import { Check } from "lucide-react";
+import whoIllustration from "../../assets/who.svg";
+
+const storyHighlights = [
+    "Therapist matching shaped around each person's goals and comfort level",
+    "Guided mindfulness and self-care programs for daily emotional support",
+    "Private progress tracking that helps people notice patterns and growth",
+    "A calmer way to ask for help before stress becomes overwhelming",
+];
 
 export default function OurStory() {
     return (
         <section className="w-full bg-transparent py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-            {/* LEFT: one L-shaped image + a separate card in the cut corner, with a gap */}
-            <div
-            className="relative w-full max-w-md mx-auto md:mx-0"
-            style={{ aspectRatio: "4 / 5" }}
-            >
-            {/* the image - single shape, fills the whole box except the bottom-right notch */}
-            <div className="absolute inset-0 rounded-3xl overflow-hidden bg-white">
-                <div className="absolute top-10 left-10 w-2 h-2 rounded-full bg-white/70" />
-                <div className="absolute top-16 left-24 w-1 h-1 rounded-full bg-white/50" />
-                <div className="absolute top-12 right-14 w-1.5 h-1.5 rounded-full bg-white/60" />
+            <div className="relative w-full max-w-md mx-auto md:mx-0">
+                <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-bg-card p-8 shadow-sm">
+                    <div className="absolute inset-x-0 top-0 h-24 bg-blue-accent/70 dark:bg-blue-accent/35" />
 
-                <div className="absolute top-12 left-1/2 -translate-x-1/2">
-                </div>
+                    <img
+                        src={whoIllustration}
+                        alt="MindEase mental wellness support illustration"
+                        className="relative z-10 w-full h-auto"
+                        loading="lazy"
+                        decoding="async"
+                    />
 
-                
-            </div>
-
-            {/* notch area: page-colored, holds the card with top/left padding = the gap */}
-            <div className="absolute right-0 bottom-0 w-1/2 h-1/3 bg-emerald-50 pt-4 pl-4">
-                <div className="w-full h-full bg-white rounded-2xl border border-emerald-100 shadow-sm p-4 flex items-center gap-3">
+                    <div className="relative z-10 mt-6 rounded-2xl border border-black/10 dark:border-white/10 bg-bg-primary p-4">
+                        <p className="text-sm font-semibold text-text-primary">Care that meets people where they are</p>
+                        <p className="mt-1 text-sm leading-relaxed text-text-secondary">
+                            MindEase brings therapy, mindfulness, and progress support into one approachable space.
+                        </p>
+                    </div>
                 </div>
             </div>
-            </div>
 
-            {/* RIGHT: label, title, subtitle, checklist */}
             <div className="max-w-xl">
-    <span className="inline-block text-xs font-semibold tracking-widest uppercase text-text-accent border-b-2 border-btn-primary/20 pb-1 mb-5">
-        Our Story
-    </span>
-
-    <h2 className="font-serif text-3xl md:text-4xl leading-tight text-text-primary mb-6">
-        Built from a Simple Idea:
-        <span className="text-btn-primary"> Mental Health Support Should Be Easier to Access.</span>
-    </h2>
-
-    <p className="text-base leading-relaxed text-text-secondary mb-9">
-        MindEase was created with one goal in mind: to make mental wellness
-        support more accessible, approachable, and personalized. We saw how
-        difficult it can be for individuals to find reliable resources,
-        professional guidance, and tools that truly fit their needs. That's why
-        we built a platform designed to connect people with meaningful support
-        whenever and wherever they need it.
-    </p>
-
-    <ul className="space-y-5">
-        {[
-            "Accessible mental wellness tools for everyday support",
-            "Personalized guidance tailored to individual needs",
-            "Secure connections with licensed mental health professionals",
-            "A supportive environment focused on long-term well-being",
-        ].map((text, i) => (
-            <li key={i} className="flex items-start gap-3">
-                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-btn-primary/15 flex items-center justify-center mt-0.5">
-                    <Check className="w-3.5 h-3.5 text-btn-primary" strokeWidth={2.5} />
+                <span className="inline-block text-sm font-semibold tracking-widest uppercase text-blue mb-5">
+                    Our Story
                 </span>
 
-                <span className="text-sm text-text-primary leading-relaxed">
-                    {text}
-                </span>
-            </li>
-        ))}
-    </ul>
-</div>
+                <h2 className="font-serif text-4xl md:text-4xl font-bold leading-tight text-text-primary mb-6">
+                    Built to Make Support Feel
+                    <span className="text-btn-primary"> Simple, Private, and Within Reach.</span>
+                </h2>
+
+                <p className="text-base leading-relaxed text-text-secondary mb-9">
+                    MindEase started from a problem many people know too well: wanting help,
+                    but not knowing where to begin. We built a mental wellness space that
+                    connects people with licensed therapists, guided mindfulness, self-care
+                    programs, and progress tools so support feels easier to start and easier
+                    to continue.
+                </p>
+
+                <ul className="space-y-5">
+                    {storyHighlights.map((text, i) => (
+                        <li key={i} className="flex items-start gap-3">
+                            <span className="flex-shrink-0 w-6 h-6 rounded-full bg-btn-primary/15 flex items-center justify-center mt-0.5">
+                                <Check className="w-3.5 h-3.5 text-btn-primary" strokeWidth={2.5} />
+                            </span>
+
+                            <span className="text-sm text-text-primary leading-relaxed">
+                                {text}
+                            </span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
         </div>
         </section>
