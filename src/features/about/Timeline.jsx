@@ -40,31 +40,29 @@ const timelineData = [
     },
     ];
 
-    const fadeFrom = (x) => ({
-    hidden: {
-        opacity: 0,
-        x,
-        y: 40,
-        scale: 0.98,
-    },
-    visible: {
-        opacity: 1,
-        x: 0,
-        y: 0,
-        scale: 1,
-        transition: {
+    const fadeFrom = (direction) => ({
+        hidden: {
+            opacity: 0,
+            y: 40,
+            rotate: direction === "left" ? -2 : 2,
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            rotate: 0,
+            transition: {
             duration: 0.8,
             ease: [0.22, 1, 0.36, 1],
+            },
         },
-    },
-});
+    });
 
     function TimelineItem({ item, index }) {
     const isEven = index % 2 === 0;
 
     const NumberBlock = (
         <motion.div
-            variants={fadeFrom(isEven ? -80 : 80)}
+            variants={fadeFrom(isEven ? "left" : "right")}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
@@ -86,7 +84,7 @@ const timelineData = [
 
     const TextBlock = (
         <motion.div
-            variants={fadeFrom(isEven ? 80 : -80)}
+            variants={fadeFrom(isEven ? "right" : "left")}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
@@ -148,7 +146,7 @@ const timelineData = [
 
     export default function Timeline() {
     return (
-        <section className="relative min-h-screen w-full bg-transparent pb-40 pt-30 px-4 md:px-16 lg:px-32">
+        <section className="relative w-full bg-transparent pb-40 pt-30 px-4 md:px-16 lg:px-32">
             {/* Header */}
             <div className="mx-0 lg:mx-50 mb-25">
                 <FadeIn delay={0}>
