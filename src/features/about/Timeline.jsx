@@ -40,29 +40,31 @@ const timelineData = [
     },
     ];
 
-    const fadeFrom = (direction) => ({
-        hidden: {
-            opacity: 0,
-            y: 40,
-            rotate: direction === "left" ? -2 : 2,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            rotate: 0,
-            transition: {
+    const fadeFrom = (x) => ({
+    hidden: {
+        opacity: 0,
+        x,
+        y: 40,
+        scale: 0.98,
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        y: 0,
+        scale: 1,
+        transition: {
             duration: 0.8,
             ease: [0.22, 1, 0.36, 1],
-            },
         },
-    });
+    },
+});
 
     function TimelineItem({ item, index }) {
     const isEven = index % 2 === 0;
 
     const NumberBlock = (
         <motion.div
-            variants={fadeFrom(isEven ? "left" : "right")}
+            variants={fadeFrom(isEven ? -80 : 80)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
@@ -84,7 +86,7 @@ const timelineData = [
 
     const TextBlock = (
         <motion.div
-            variants={fadeFrom(isEven ? "right" : "left")}
+            variants={fadeFrom(isEven ? 80 : -80)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
